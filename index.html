@@ -39,10 +39,10 @@
 
   <script>
     var ctx = document.getElementById("myChart");
-    var myChart = new Chart(ctx, { type: 'line',
-                                   data: { labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-                                            datasets: [{  label: '# of Votes',
-                                                          data: [12, 19, 3, 5, 2, 3],
+    var myChart = new Chart(ctx, { type: 'line', // type of chart
+                                   data: {  labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"], // x axis labels
+                                            datasets: [{  label: '# of Votes', // tooltip on data point hover
+                                                          data: [12, 19, 3, 5, 2, 3], // x axis data separated by commas, y axis data by number
                                                           backgroundColor: ['rgba(255, 99, 132, 0.2)',
                                                                             'rgba(54, 162, 235, 0.2)',
                                                                             'rgba(255, 206, 86, 0.2)',
@@ -57,7 +57,9 @@
                                                                         'rgba(255, 159, 64, 1)'],
                                                           borderWidth: 1                                  }]
                                                                                                           },
-                                     options: { scales: { yAxes: [{ ticks: { beginAtZero:true } }] } }
+                                     options: { scales: { yAxes:  [{ ticks: { beginAtZero:true } }]
+                                                                                                  }
+                                                                                                  }
                                                                                                           });
   </script>
 
