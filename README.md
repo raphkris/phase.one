@@ -15,10 +15,10 @@ Dunwoody CWEB1111.01 Spring 2019 | Team Project Phase 1
 - [ ] Select graphics
 
 ## Data/programming logic
-- [ ] Determine topic
-- [ ] Determine dataset
-- [ ] 501 (500?) records minimum
-- [ ] Five key-value attributes minimum per record
+- [x] Determine topic
+- [x] Determine dataset
+- [x] 501 (500?) records minimum
+- [x] Five key-value attributes minimum per record
 - [ ] (Try to) include programming concepts (ch. 3-9)
 - [ ] (Implement sorting algorithm *phase.two*)
 
