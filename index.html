@@ -15,6 +15,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+  <script src="js/index.js"></script>
 
   <title>Team Project Phase 1</title>
 
@@ -36,6 +37,36 @@
     var myChart = new Chart(ctx, { type: 'line', // type of chart
                                    data: {  labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"], // x axis labels
                                             datasets: [{  label: '# of Votes', // tooltip on data point hover
+                                                          data: [12, 19, 3, 5, 2, 3], // x axis data separated by commas, y axis data by numbers
+                                                          backgroundColor: ['rgba(255, 99, 132, 0.2)',
+                                                                            'rgba(54, 162, 235, 0.2)',
+                                                                            'rgba(255, 206, 86, 0.2)',
+                                                                            'rgba(75, 192, 192, 0.2)',
+                                                                            'rgba(153, 102, 255, 0.2)',
+                                                                            'rgba(255, 159, 64, 0.2)'],
+                                                          borderColor: ['rgba(255,99,132,1)',
+                                                                        'rgba(54, 162, 235, 1)',
+                                                                        'rgba(255, 206, 86, 1)',
+                                                                        'rgba(75, 192, 192, 1)',
+                                                                        'rgba(153, 102, 255, 1)',
+                                                                        'rgba(255, 159, 64, 1)'],
+                                                          borderWidth: 1                                  }]
+                                                                                                          },
+                                     options: { scales: { yAxes:  [{ ticks: { beginAtZero:true } }]
+                                                                                                  }
+                                                                                                  }
+                                                                                                          });
+  </script>
+
+  <div style="height:25vh;width:25vw;">
+    <canvas id="myChart2" width="100%" height="100%"></canvas>
+  </div>
+
+  <script>
+    var ctx = document.getElementById("myChart2");
+    var myChart = new Chart(ctx, { type: 'line',
+                                   data: {  labels: ["One", "Two", "Three"],
+                                   datasets: [{  label: 'Test label', // tooltip on data point hover
                                                           data: [12, 19, 3, 5, 2, 3], // x axis data separated by commas, y axis data by numbers
                                                           backgroundColor: ['rgba(255, 99, 132, 0.2)',
                                                                             'rgba(54, 162, 235, 0.2)',
