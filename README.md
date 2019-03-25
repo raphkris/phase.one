@@ -19,7 +19,7 @@ Dunwoody CWEB1111.01 Spring 2019 | Team Project Phase 1
 - [x] Determine dataset
 - [x] 501 (500?) records minimum
 - [x] Five key-value attributes minimum per record
-- [ ] (Try to) include programming concepts (ch. 3-9)
+- [x] (Try to) include programming concepts (ch. 3-9)
 - [ ] (Implement sorting algorithm *phase.two*)
 
 ## Hosting/presentation
