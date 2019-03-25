@@ -79,7 +79,7 @@
          
          console.log(yearTwentyEleven);
 
-         var ctx = document.getElementById("myChart2");
+    var ctx = document.getElementById("myChart2");
     var myChart = new Chart(ctx, { type: 'line',
                                    data: {  labels: ["Count of year 2011", "Two", "Three"],
                                    datasets: [{  label: 'Test label', // tooltip on data point hover
@@ -111,7 +111,7 @@
            alert("Sorry, we didn't find the file requested");
          }
     };
-    xhttp.open("GET", "data.json", true);
+    xhttp.open("GET", "js/data.json", true);
     xhttp.send();
 
   </script>
