@@ -29,6 +29,8 @@ Dunwoody CWEB1111.01 Spring 2019 | Team Project Phase 1
 - [ ] Include (sorting algorithm *phase.two*/front-end JavaScript framework)
 
 ## data.json shortcuts legend
+### Make
+Short   | Original      |---| Short | Original
 Make    | Make          |---| Make  | Make
 :---:   | :---:         |---| :---: | :---:
 ACU     | Acura         |---| LEX   | Lexus
@@ -56,6 +58,8 @@ KIA     | Kia           |---| TOY   | Toyota
 LAM     | Lamborghini   |---| VW    | Volkswagen
 LR      | Land Rover    |---| VOL   | Volvo
 
+### Engine Fuel Type -> Fuel
+Short   | Original
 Fuel    | Engine Fuel Type
 :---:   | :---:
 N       | N/A
@@ -68,6 +72,8 @@ PC      | premium unleaded (recommended)
 PQ      | premium unleaded (required)
 R       | regular unleaded
 
+### Driven_Wheels -> DT
+Short   | Original
 DT      | Driven_Wheels
 :---:   | :---:
 4       | four wheel drive
@@ -75,6 +81,8 @@ A       | all wheel drive
 F       | front wheel drive
 R       | rear wheel drive
 
+### Transmission Type -> Trans
+Short   | Original
 Trans   | Transmission Type
 :---:   | :---:
 N       | UNKNOWN
@@ -83,12 +91,15 @@ A       | AUTOMATIC
 D       | DIRECT_DRIVE
 AMT     | AUTOMATED_MANUAL
 
+### Vehicle Size -> Size
+Short   | Original
 Size    | Vehicle Size
 :---:   | :---:
 C       | Compact
 M       | Midsize
 L       | Large
-
+### Vehicle Style -> Style
+Short   | Original
 Style   | Vehicle Style
 :---:   | :---:
 2H      | 2dr Hatchback
@@ -108,6 +119,8 @@ RCP     | Regular Cab Pickup
 S       | Sedan
 W       | Wagon
 
+### Market Category -> MCAT
+Short   | Original
 MCAT    | Market Category
 :---:   | :---:
 C       | Crossover
