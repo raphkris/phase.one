@@ -30,38 +30,38 @@ Dunwoody CWEB1111.01 Spring 2019 | Team Project Phase 1
 
 ## data.json shortcuts legend
 ### Make
-Short   | Original      |---| Short | Original
-Make    | Make          |---| Make  | Make
-:---:   | :---:         |---| :---: | :---:
-ACU     | Acura         |---| LEX   | Lexus
-ALFA    | Alfa Romeo    |---| LIN   | Lincoln
-AM      | Aston Martin  |---| LOT   | Lotus
-AUDI    | Audi          |---| MAS   | Maserati
-BEN     | Bentley       |---| MAY   | Maybach
-BMW     | BMW           |---| MAZ   | Mazda
-BUG     | Bugatti       |---| MCLA  | Mclaren
-BUI     | Buick         |---| MB    | Mercedes-Benz
-CAD     | Cadillac      |---| MITS  | Mitsubishi
-CHEV    | Chevrolet     |---| NIS   | Nissan
-CHR     | Chrysler      |---| OLDS  | Oldsmobile
-DOD     | Dodge         |---| PLY   | Plymouth
-FERR    | Ferrari       |---| PON   | Pontiac
-FIAT    | Fiat          |---| POR   | Porsche
-FORD    | Ford          |---| RR    | Rolls-Royce
-GEN     | Genesis       |---| SAA   | Saab
-GMC     | GMC           |---| SCI   | Scion
-HON     | Honda         |---| SPY   | Spyker
-HUM     | Hummer        |---| SUB   | Subaru
-HYUN    | Hyundai       |---| SUZ   | Suzuki
-INF     | Infiniti      |---| TSLA  | Tesla
-KIA     | Kia           |---| TOY   | Toyota
-LAM     | Lamborghini   |---| VW    | Volkswagen
-LR      | Land Rover    |---| VOL   | Volvo
+Short   | Original      |---| Short     | Original
+:---:   | :---:         |---| :---:     | :---:
+**Make**| **Make**      |---| **Make**  | **Make**
+ACU     | Acura         |---| LEX       | Lexus
+ALFA    | Alfa Romeo    |---| LIN       | Lincoln
+AM      | Aston Martin  |---| LOT       | Lotus
+AUDI    | Audi          |---| MAS       | Maserati
+BEN     | Bentley       |---| MAY       | Maybach
+BMW     | BMW           |---| MAZ       | Mazda
+BUG     | Bugatti       |---| MCLA      | Mclaren
+BUI     | Buick         |---| MB        | Mercedes-Benz
+CAD     | Cadillac      |---| MITS      | Mitsubishi
+CHEV    | Chevrolet     |---| NIS       | Nissan
+CHR     | Chrysler      |---| OLDS      | Oldsmobile
+DOD     | Dodge         |---| PLY       | Plymouth
+FERR    | Ferrari       |---| PON       | Pontiac
+FIAT    | Fiat          |---| POR       | Porsche
+FORD    | Ford          |---| RR        | Rolls-Royce
+GEN     | Genesis       |---| SAA       | Saab
+GMC     | GMC           |---| SCI       | Scion
+HON     | Honda         |---| SPY       | Spyker
+HUM     | Hummer        |---| SUB       | Subaru
+HYUN    | Hyundai       |---| SUZ       | Suzuki
+INF     | Infiniti      |---| TSLA      | Tesla
+KIA     | Kia           |---| TOY       | Toyota
+LAM     | Lamborghini   |---| VW        | Volkswagen
+LR      | Land Rover    |---| VOL       | Volvo
 
 ### Engine Fuel Type -> Fuel
 Short   | Original
-Fuel    | Engine Fuel Type
 :---:   | :---:
+**Fuel**| **Engine Fuel Type**
 N       | N/A
 D       | diesel
 E       | electric
@@ -74,55 +74,55 @@ R       | regular unleaded
 
 ### Driven_Wheels -> DT
 Short   | Original
-DT      | Driven_Wheels
 :---:   | :---:
+**DT**  | **Driven_Wheels**
 4       | four wheel drive
 A       | all wheel drive
 F       | front wheel drive
 R       | rear wheel drive
 
 ### Transmission Type -> Trans
-Short   | Original
-Trans   | Transmission Type
-:---:   | :---:
-N       | UNKNOWN
-M       | MANUAL
-A       | AUTOMATIC
-D       | DIRECT_DRIVE
-AMT     | AUTOMATED_MANUAL
+Short       | Original
+:---:       | :---:
+**Trans**   | **Transmission Type**
+N           | UNKNOWN
+M           | MANUAL
+A           | AUTOMATIC
+D           | DIRECT_DRIVE
+AMT         | AUTOMATED_MANUAL
 
 ### Vehicle Size -> Size
 Short   | Original
-Size    | Vehicle Size
 :---:   | :---:
+**Size**| **Vehicle Size**
 C       | Compact
 M       | Midsize
 L       | Large
 ### Vehicle Style -> Style
-Short   | Original
-Style   | Vehicle Style
-:---:   | :---:
-2H      | 2dr Hatchback
-2S      | 2dr SUV
-4H      | 4dr Hatchback
-4S      | 4dr SUV
-CMV     | Cargo Minivan
-CV      | Cargo Van
-CON     | Convertible
-CONS    | Convertible SUV
-COU     | Coupe
-CCP     | Crew Cab Pickup
-ECP     | Extended Cab Pickup
-PMV     | Passenger Minivan
-PV      | Passenger Van
-RCP     | Regular Cab Pickup
-S       | Sedan
-W       | Wagon
+Short       | Original
+:---:       | :---:
+**Style**   | **Vehicle Style**
+2H          | 2dr Hatchback
+2S          | 2dr SUV
+4H          | 4dr Hatchback
+4S          | 4dr SUV
+CMV         | Cargo Minivan
+CV          | Cargo Van
+CON         | Convertible
+CONS        | Convertible SUV
+COU         | Coupe
+CCP         | Crew Cab Pickup
+ECP         | Extended Cab Pickup
+PMV         | Passenger Minivan
+PV          | Passenger Van
+RCP         | Regular Cab Pickup
+S           | Sedan
+W           | Wagon
 
 ### Market Category -> MCAT
 Short   | Original
-MCAT    | Market Category
 :---:   | :---:
+**MCAT**| **Market Category**
 C       | Crossover
 D       | Diesel
 E       | Exotic
