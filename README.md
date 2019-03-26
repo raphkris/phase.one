@@ -98,6 +98,7 @@ Short   | Original
 C       | Compact
 M       | Midsize
 L       | Large
+
 ### Vehicle Style -> Style
 Short       | Original
 :---:       | :---:
