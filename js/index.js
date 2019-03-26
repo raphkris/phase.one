@@ -1,4 +1,4 @@
-function myChart2() {
+function myChart1() {
 
   /** Make the connection to external server **/
   var xhttp = new XMLHttpRequest();
@@ -18,7 +18,7 @@ function myChart2() {
         
       console.log(yearTwentyEleven);
 
-      var ctx = document.getElementById("myChart2");
+      var ctx = document.getElementById("myChart1");
       var myChart = new Chart(ctx, { type: 'line',
                                     data: {  labels: ["Count of year 2011", "Two", "Three"],
                                     datasets: [{  label: 'Test label', // tooltip on data point hover
