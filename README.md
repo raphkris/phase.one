@@ -30,33 +30,49 @@ Dunwoody CWEB1111.01 Spring 2019 | Team Project Phase 1
 
 ## data.json shortcuts legend
 ### Make
-Short   | Original      |---| Short     | Original
-:---:   | :---:         |---| :---:     | :---:
-**Make**| **Make**      |---| **Make**  | **Make**
-ACU     | Acura         |---| LEX       | Lexus
-ALFA    | Alfa Romeo    |---| LIN       | Lincoln
-AM      | Aston Martin  |---| LOT       | Lotus
-AUDI    | Audi          |---| MAS       | Maserati
-BEN     | Bentley       |---| MAY       | Maybach
-BMW     | BMW           |---| MAZ       | Mazda
-BUG     | Bugatti       |---| MCLA      | Mclaren
-BUI     | Buick         |---| MB        | Mercedes-Benz
-CAD     | Cadillac      |---| MITS      | Mitsubishi
-CHEV    | Chevrolet     |---| NIS       | Nissan
-CHR     | Chrysler      |---| OLDS      | Oldsmobile
-DOD     | Dodge         |---| PLY       | Plymouth
-FERR    | Ferrari       |---| PON       | Pontiac
-FIAT    | Fiat          |---| POR       | Porsche
-FORD    | Ford          |---| RR        | Rolls-Royce
-GEN     | Genesis       |---| SAA       | Saab
-GMC     | GMC           |---| SCI       | Scion
-HON     | Honda         |---| SPY       | Spyker
-HUM     | Hummer        |---| SUB       | Subaru
-HYUN    | Hyundai       |---| SUZ       | Suzuki
-INF     | Infiniti      |---| TSLA      | Tesla
-KIA     | Kia           |---| TOY       | Toyota
-LAM     | Lamborghini   |---| VW        | Volkswagen
-LR      | Land Rover    |---| VOL       | Volvo
+Short   | Original      | Country |---| Short     | Original      | Country
+:---:   | :---:         | :---:   |---| :---:     | :---:         | :---:
+**Make**| **Make**      |         |---| **Make**  | **Make**      |
+ACU     | Acura         | JPN     |---| LEX       | Lexus         | JPN
+ALFA    | Alfa Romeo    | ITL     |---| LIN       | Lincoln       | US
+AM      | Aston Martin  | UK      |---| LOT       | Lotus         | UK
+AUDI    | Audi          | DE      |---| MAS       | Maserati      | ITL
+BEN     | Bentley       | UK      |---| MAY       | Maybach       | DE
+BMW     | BMW           | DE      |---| MAZ       | Mazda         | JPN
+BUG     | Bugatti       | FR      |---| MCLA      | Mclaren       | UK
+BUI     | Buick         | US      |---| MB        | Mercedes-Benz | DE
+CAD     | Cadillac      | US      |---| MITS      | Mitsubishi    | JPN
+CHEV    | Chevrolet     | US      |---| NIS       | Nissan        | JPN
+CHR     | Chrysler      | US      |---| OLDS      | Oldsmobile    | US
+DOD     | Dodge         | US      |---| PLY       | Plymouth      | US
+FERR    | Ferrari       | ITL     |---| PON       | Pontiac       | US
+FIAT    | Fiat          | ITL     |---| POR       | Porsche       | DE
+FORD    | Ford          | US      |---| RR        | Rolls-Royce   | UK
+GEN     | Genesis       | KR      |---| SAA       | Saab          | SE
+GMC     | GMC           | US      |---| SCI       | Scion         | JPN
+HON     | Honda         | JPN     |---| SPY       | Spyker        | NL
+HUM     | Hummer        | US      |---| SUB       | Subaru        | JPN
+HYUN    | Hyundai       | KR      |---| SUZ       | Suzuki        | JPN
+INF     | Infiniti      | JPN     |---| TSLA      | Tesla         | US
+KIA     | Kia           | KR      |---| TOY       | Toyota        | JPN
+LAM     | Lamborghini   | ITL     |---| VW        | Volkswagen    | DE
+LR      | Land Rover    | UK      |---| VOL       | Volvo         | SE
+
+#### Make by Country
+DE    | FR    | ITL   | JPN   | KR    | NL    | SE    | UK    | US
+:---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---:
+AUDI  | BUG   | ALFA  | ACU   | GEN   | SPY   | SAA   | AM    | BUI
+BMW   |       | FERR  | HON   | HYUN  |       | VOL   | BEN   | CAD
+MAY   |       | FIAT  | INF   | KIA   |       |       | LR    | CHEV
+MB    |       | LAM   | LEX   |       |       |       | LOT   | CHR
+POR   |       | MAS   | MAZ   |       |       |       | RR    | DOD
+VW    |       |       | MITS  |       |       |       |       | GMC
+      |       |       | NIS   |       |       |       |       | HUM
+      |       |       | SCI   |       |       |       |       | LIN
+      |       |       | SUB   |       |       |       |       | OLDS
+      |       |       | SUZ   |       |       |       |       | PLY
+      |       |       | TOY   |       |       |       |       | PON
+      |       |       |       |       |       |       |       | TSLA
 
 ### Engine Fuel Type -> Fuel
 Short   | Original
