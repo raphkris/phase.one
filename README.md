@@ -67,12 +67,12 @@ MAY     |       | FIAT  | INF   | KIA   |       |       | LR    | CHEV
 MB      |       | LAM   | LEX   |       |       |       | LOT   | CHR
 POR     |       | MAS   | MAZ   |       |       |       | RR    | DOD
 VW      |       |       | MITS  |       |       |       |       | GMC
-        |       |       | NIS   |       |       |       |       | HUM
-        |       |       | SCI   |       |       |       |       | LIN
-        |       |       | SUB   |       |       |       |       | OLDS
-        |       |       | SUZ   |       |       |       |       | PLY
-        |       |       | TOY   |       |       |       |       | PON
-        |       |       |       |       |       |       |       | TSLA
+-       |       |       | NIS   |       |       |       |       | HUM
+-       |       |       | SCI   |       |       |       |       | LIN
+-       |       |       | SUB   |       |       |       |       | OLDS
+-       |       |       | SUZ   |       |       |       |       | PLY
+-       |       |       | TOY   |       |       |       |       | PON
+-       |       |       |       |       |       |       |       | TSLA
 
 ### Engine Fuel Type -> Fuel
 Short   | Original
