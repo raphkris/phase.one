@@ -9,88 +9,49 @@ function myChart1() {
 
       // Typical action to be performed when the document is ready:
       var data = JSON.parse(this.responseText);
-      
-      // Germany
-      var DE = 0;
+
+      // Germany, France, Italy, Japan, South Korea, Netherlands, Sweden, United Kingdom, United States
+      var DE, FR, ITL, JPN, KR, NL, SE, UK, US;
+      DE = FR = ITL = JPN = KR = NL = SE = UK = US = 0;
       for(var i = 0; i < data.length; i++){
         if(data[i].Make == AUDI || data[i].Make == BMW || data[i].Make == MAY || data[i].Make == MB || data[i].Make == POR || data[i].Make == VW){
-            DE += 1;
+          DE += 1;
         }
-      }
-      console.log(DE);
-
-      // France
-      var FR = 0;
-      for(var i = 0; i < data.length; i++){
         if(data[i].Make == BUG){
-            FR += 1;
+          FR += 1;
         }
-      }
-      console.log(FR);
-
-      // Italy
-      var ITL = 0;
-      for(var i = 0; i < data.length; i++){
         if(data[i].Make == ALFA || data[i].Make == FERR || data[i].Make == FIAT || data[i].Make == LAM || data[i].Make == MAS){
           ITL += 1;
         }
-      }
-      console.log(ITL);
-
-      // Japan
-      var JPN = 0;
-      for(var i = 0; i < data.length; i++){
         if(data[i].Make == ACU || data[i].Make == HON || data[i].Make == INF || data[i].Make == LEX || data[i].Make == MAZ || data[i].Make == MITS || data[i].Make == NIS || data[i].Make == SCI || data[i].Make == SUB || data[i].Make == SUZ || data[i].Make == TOY){
           JPN += 1;
         }
-      }
-      console.log(JPN);
-
-      // South Korea
-      var KR = 0;
-      for(var i = 0; i < data.length; i++){
         if(data[i].Make == GEN || data[i].Make == HYUN || data[i].Make == KIA){
           KR += 1;
         }
-      }
-      console.log(KR);
-
-      // Netherlands
-      var NL = 0;
-      for(var i = 0; i < data.length; i++){
         if(data[i].Make == SPY){
           NL += 1;
         }
-      }
-      console.log(NL);
-
-      // Sweden
-      var SE = 0;
-      for(var i = 0; i < data.length; i++){
         if(data[i].Make == SAA || data[i].Make == VOL){
-            SE += 1;
+          SE += 1;
         }
-      }
-      console.log(SE);
-
-      // United Kingdom
-      var UK = 0;
-      for(var i = 0; i < data.length; i++){
         if(data[i].Make == AM || data[i].Make == BEN || data[i].Make == LR || data[i].Make == LOT || data[i].Make == RR){
-            UK += 1;
+          UK += 1;
         }
-      }
-      console.log(UK);
-
-      // United States
-      var US = 0;
-      for(var i = 0; i < data.length; i++){
         if(data[i].Make == BUI || data[i].Make == CAD || data[i].Make == CHEV || data[i].Make == CHR || data[i].Make == DOD || data[i].Make == GMC || data[i].Make == HUM || data[i].Make == LIN || data[i].Make == OLDS || data[i].Make == PLY || data[i].Make == PON || data[i].Make == TSLA){
-            US += 1;
+          US += 1;
         }
       }
+      console.log(DE);
+      console.log(FR);
+      console.log(ITL);
+      console.log(JPN);
+      console.log(KR);
+      console.log(SE);
+      console.log(NL);
+      console.log(UK);
       console.log(US);
-
+      
       var ctx = document.getElementById("myChart1");
       var myChart = new Chart(ctx, { type: 'line',
                                     data: {  labels: ["Germany", "France", "Italy", "Japan", "South Korea", "Netherlands", "Sweden", "United Kingdom", "United States"],
