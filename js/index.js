@@ -1,3 +1,4 @@
+// bar graph | make - country of origin | count
 function myChart1() {
 
   /** Make the connection to external server **/
@@ -53,28 +54,26 @@ function myChart1() {
       console.log(US);
       
       var ctx = document.getElementById("myChart1");
-      var myChart = new Chart(ctx, { type: 'line',
-                                    data: {  labels: ["Germany", "France", "Italy", "Japan", "South Korea", "Netherlands", "Sweden", "United Kingdom", "United States"],
-                                             datasets: [{   label: 'Test label', // tooltip on data point hover
-                                                            data: [DE, FR, ITL, JPN, KR, NL, SE, UK, US], // x axis data separated by commas, y axis data by numbers
-                                                            backgroundColor: ['rgba(255, 99, 132, 0.2)',
-                                                                              'rgba(54, 162, 235, 0.2)',
-                                                                              'rgba(255, 206, 86, 0.2)',
-                                                                              'rgba(75, 192, 192, 0.2)',
-                                                                              'rgba(153, 102, 255, 0.2)',
-                                                                              'rgba(255, 159, 64, 0.2)'],
-                                                            borderColor: ['rgba(255,99,132,1)',
-                                                                          'rgba(54, 162, 235, 1)',
-                                                                          'rgba(255, 206, 86, 1)',
-                                                                          'rgba(75, 192, 192, 1)',
-                                                                          'rgba(153, 102, 255, 1)',
-                                                                          'rgba(255, 159, 64, 1)'],
-                                                            borderWidth: 1                                  }]
-                                                                                                            },
-                                      options: { scales: { yAxes:  [{ ticks: { beginAtZero:true } }]
-                                                                                                    }
-                                                                                                    }
-                                                                                                            });
+      var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Germany', 'France', 'Italy', 'Japan', 'South Korea', 'Netherlands', 'Sweden', 'United Kingdom', 'United States'],
+            datasets: [{
+                label: '# of Votes',
+                data: [DE, FR, ITL, JPN, KR, NL, SE, UK, US],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+      });
 
     }else{
       alert("Sorry, we didn't find the file requested");
@@ -84,6 +83,7 @@ function myChart1() {
   xhttp.send();
 
 }
+
 
 function myChart2() {
 
