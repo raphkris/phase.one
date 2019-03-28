@@ -7,10 +7,10 @@ Dunwoody CWEB1111.01 Spring 2019 | Team Project Phase 1
 
 # Requirements
 ## UI/UX
-- [ ] Display data graphically (three different manipulations)
+- [x] Display data graphically (three different manipulations)
 - [ ] Welcome end-user (who the data is for/when the data was extracted/where data came from/why data is important)
 - [ ] End-user manipulate one chart
-- [ ] Select font
+- [x] Select font
 - [ ] Select color
 - [ ] Select graphics
 

@@ -1,0 +1,22 @@
+/*
+    external fonts
+*/
+@font-face{
+    font-family: "Centra No. 2";
+    src: url("font/CentraNo2-Black.otf") format("otf");
+    src: url("font/CentraNo2-BlackItalic.otf") format("otf");
+    src: url("font/CentraNo2-Bold.otf") format("otf");
+    src: url("font/CentraNo2-BoldItalic.otf") format("otf");
+    src: url("font/CentraNo2-Book.otf") format("otf");
+    src: url("font/CentraNo2-BookItalic.otf") format("otf");
+    src: url("font/CentraNo2-Extrabold.otf") format("otf");
+    src: url("font/CentraNo2-ExtraboldItalic.otf") format("otf");
+    src: url("font/CentraNo2-Hairline.otf") format("otf");
+    src: url("font/CentraNo2-HairlineItalic.otf") format("otf");
+    src: url("font/CentraNo2-Light.otf") format("otf");
+    src: url("font/CentraNo2-LightItalic.otf") format("otf");
+    src: url("font/CentraNo2-Medium.otf") format("otf");
+    src: url("font/CentraNo2-MediumItalic.otf") format("otf");
+    src: url("font/CentraNo2-Thin.otf") format("otf");
+    src: url("font/CentraNo2-ThinItalic.otf") format("otf");
+}

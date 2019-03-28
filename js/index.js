@@ -1,4 +1,6 @@
-// bar | make - country of origin | count | static
+/*
+    bar | make - country of origin | count | static
+*/
 function myChart1(){
 
   /** Make the connection to external server **/
@@ -83,7 +85,9 @@ function myChart1(){
 
 }
 
-// bar | drivetrain | count | static
+/*
+    bar | drivetrain | count | static
+*/
 function myChart2(){
 
   /** Make the connection to external server **/
@@ -163,7 +167,9 @@ function myChart2(){
 
 }
 
-// type | focus | comparison | dynamic
+/*
+    type | focus | comparison | dynamic
+*/
 function myChart3(){
 
 }
