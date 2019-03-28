@@ -1,5 +1,5 @@
-// bar graph | make - country of origin | count
-function myChart1() {
+// bar | make - country of origin | count | static
+function myChart1(){
 
   /** Make the connection to external server **/
   var xhttp = new XMLHttpRequest();
@@ -12,34 +12,33 @@ function myChart1() {
       var data = JSON.parse(this.responseText);
 
       // Germany, France, Italy, Japan, South Korea, Netherlands, Sweden, United Kingdom, United States
-      var DE, FR, ITL, JPN, KR, NL, SE, UK, US;
-      DE = FR = ITL = JPN = KR = NL = SE = UK = US = 0;
+      var DE = 0; FR = 0; ITL = 0; JPN = 0; KR = 0; NL = 0; SE = 0; UK = 0; US = 0;
       for(var i = 0; i < data.length; i++){
         if(data[i].Make == AUDI || data[i].Make == BMW || data[i].Make == MAY || data[i].Make == MB || data[i].Make == POR || data[i].Make == VW){
           DE += 1;
         }
-        if(data[i].Make == BUG){
+        else if(data[i].Make == BUG){
           FR += 1;
         }
-        if(data[i].Make == ALFA || data[i].Make == FERR || data[i].Make == FIAT || data[i].Make == LAM || data[i].Make == MAS){
+        else if(data[i].Make == ALFA || data[i].Make == FERR || data[i].Make == FIAT || data[i].Make == LAM || data[i].Make == MAS){
           ITL += 1;
         }
-        if(data[i].Make == ACU || data[i].Make == HON || data[i].Make == INF || data[i].Make == LEX || data[i].Make == MAZ || data[i].Make == MITS || data[i].Make == NIS || data[i].Make == SCI || data[i].Make == SUB || data[i].Make == SUZ || data[i].Make == TOY){
+        else if(data[i].Make == ACU || data[i].Make == HON || data[i].Make == INF || data[i].Make == LEX || data[i].Make == MAZ || data[i].Make == MITS || data[i].Make == NIS || data[i].Make == SCI || data[i].Make == SUB || data[i].Make == SUZ || data[i].Make == TOY){
           JPN += 1;
         }
-        if(data[i].Make == GEN || data[i].Make == HYUN || data[i].Make == KIA){
+        else if(data[i].Make == GEN || data[i].Make == HYUN || data[i].Make == KIA){
           KR += 1;
         }
-        if(data[i].Make == SPY){
+        else if(data[i].Make == SPY){
           NL += 1;
         }
-        if(data[i].Make == SAA || data[i].Make == VOL){
+        else if(data[i].Make == SAA || data[i].Make == VOL){
           SE += 1;
         }
-        if(data[i].Make == AM || data[i].Make == BEN || data[i].Make == LR || data[i].Make == LOT || data[i].Make == RR){
+        else if(data[i].Make == AM || data[i].Make == BEN || data[i].Make == LR || data[i].Make == LOT || data[i].Make == RR){
           UK += 1;
         }
-        if(data[i].Make == BUI || data[i].Make == CAD || data[i].Make == CHEV || data[i].Make == CHR || data[i].Make == DOD || data[i].Make == GMC || data[i].Make == HUM || data[i].Make == LIN || data[i].Make == OLDS || data[i].Make == PLY || data[i].Make == PON || data[i].Make == TSLA){
+        else if(data[i].Make == BUI || data[i].Make == CAD || data[i].Make == CHEV || data[i].Make == CHR || data[i].Make == DOD || data[i].Make == GMC || data[i].Make == HUM || data[i].Make == LIN || data[i].Make == OLDS || data[i].Make == PLY || data[i].Make == PON || data[i].Make == TSLA){
           US += 1;
         }
       }
@@ -84,8 +83,8 @@ function myChart1() {
 
 }
 
-
-function myChart2() {
+// bar | drivetrain | count | static
+function myChart2(){
 
   /** Make the connection to external server **/
   var xhttp = new XMLHttpRequest();
@@ -161,5 +160,10 @@ function myChart2() {
     };
   xhttp.open("GET", "js/data.json", true);
   xhttp.send();
+
+}
+
+// type | focus | comparison | dynamic
+function myChart3(){
 
 }
