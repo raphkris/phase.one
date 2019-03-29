@@ -7,10 +7,10 @@ Dunwoody CWEB1111.01 Spring 2019 | Team Project Phase 1
 
 # Requirements
 ## UI/UX
-- [ ] Display data graphically (three different manipulations)
+- [x] Display data graphically (three different manipulations)
 - [ ] Welcome end-user (who the data is for/when the data was extracted/where data came from/why data is important)
 - [ ] End-user manipulate one chart
-- [ ] Select font
+- [x] Select font
 - [ ] Select color
 - [ ] Select graphics
 
@@ -59,20 +59,20 @@ LAM     | Lamborghini   | ITL     |---| VW        | Volkswagen    | DE
 LR      | Land Rover    | UK      |---| VOL       | Volvo         | SE
 
 #### Make by Country
-DE    | FR    | ITL   | JPN   | KR    | NL    | SE    | UK    | US
-:---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---:
-AUDI  | BUG   | ALFA  | ACU   | GEN   | SPY   | SAA   | AM    | BUI
-BMW   |       | FERR  | HON   | HYUN  |       | VOL   | BEN   | CAD
-MAY   |       | FIAT  | INF   | KIA   |       |       | LR    | CHEV
-MB    |       | LAM   | LEX   |       |       |       | LOT   | CHR
-POR   |       | MAS   | MAZ   |       |       |       | RR    | DOD
-VW    |       |       | MITS  |       |       |       |       | GMC
-      |       |       | NIS   |       |       |       |       | HUM
-      |       |       | SCI   |       |       |       |       | LIN
-      |       |       | SUB   |       |       |       |       | OLDS
-      |       |       | SUZ   |       |       |       |       | PLY
-      |       |       | TOY   |       |       |       |       | PON
-      |       |       |       |       |       |       |       | TSLA
+DE      | FR    | ITL   | JPN   | KR    | NL    | SE    | UK    | US
+:---:   | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---:
+AUDI    | BUG   | ALFA  | ACU   | GEN   | SPY   | SAA   | AM    | BUI
+BMW     |       | FERR  | HON   | HYUN  |       | VOL   | BEN   | CAD
+MAY     |       | FIAT  | INF   | KIA   |       |       | LR    | CHEV
+MB      |       | LAM   | LEX   |       |       |       | LOT   | CHR
+POR     |       | MAS   | MAZ   |       |       |       | RR    | DOD
+VW      |       |       | MITS  |       |       |       |       | GMC
+        |       |       | NIS   |       |       |       |       | HUM
+        |       |       | SCI   |       |       |       |       | LIN
+        |       |       | SUB   |       |       |       |       | OLDS
+        |       |       | SUZ   |       |       |       |       | PLY
+        |       |       | TOY   |       |       |       |       | PON
+        |       |       |       |       |       |       |       | TSLA
 
 ### Engine Fuel Type -> Fuel
 Short   | Original
