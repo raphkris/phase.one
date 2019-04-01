@@ -3,7 +3,9 @@ Dunwoody CWEB1111.01 Spring 2019 | Team Project Phase 1
 
 # Reference
 [phase.one](https://raphkris.github.io/phase.one/) link (attached to master branch)
-[Chart.js](https://www.chartjs.org/docs/latest/) link and tutorial
+[Chart.js](https://www.chartjs.org/docs/latest/) link and tutorial. front end framework for charts.
+[http://getskeleton.com/](skeleton) link and guide. front end framework.
+Dataset from [https://www.kaggle.com/CooperUnion/cardataset](Kaggle).
 
 # Requirements
 ## UI/UX
@@ -137,6 +139,9 @@ S           | Sedan
 W           | Wagon
 
 ### Market Category -> MCAT
+
+*changes not yet made in data.json.*
+
 Short   | Original
 :---:   | :---:
 **MCAT**| **Market Category**

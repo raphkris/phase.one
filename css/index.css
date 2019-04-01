@@ -1,7 +1,46 @@
-/*
-    external fonts
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+- Temporary properties
+- Typography
+- group 3
+- group 4
+- group 5
+- group 6
+- group 7
+- group 8
+- group 9
+- group 10
 */
-@font-face{
+
+/* Temporary properties
+
+use for sizing and positioning of box elements
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+.temporary17{
+    border: 1px dashed red;
+}
+.temporary27{
+    border: 1px solid lightsalmon;
+}
+.temporary37{
+    border: 1px dashed yellow;
+}
+.temporary47{
+    border: 1px solid limegreen;
+}
+.temporary57{
+    border: 1px dashed lightskyblue;
+}
+.temporary67{
+    border: 1px solid plum;
+}
+.temporary77{
+    border: 1px dashed purple;
+}
+
+/* Typography *currently using skeleton.css fonts*
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*@font-face{
     font-family: "Centra No. 2";
     src: url("font/CentraNo2-Black.otf") format("otf");
     src: url("font/CentraNo2-BlackItalic.otf") format("otf");
@@ -19,4 +58,36 @@
     src: url("font/CentraNo2-MediumItalic.otf") format("otf");
     src: url("font/CentraNo2-Thin.otf") format("otf");
     src: url("font/CentraNo2-ThinItalic.otf") format("otf");
-}
+}*/
+
+/* group 3
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* group 4
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* group 5
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* group 6
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* group 7
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* group 8
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* group 9
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* group 10
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+

@@ -1,5 +1,13 @@
 /*
-    bar | make - country of origin | count | static
+    Comment syntax
+
+    type of graph | specific data used
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+*/
+
+/*
+    bar | make - country of origin
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 */
 function myChart1(){
 
@@ -86,7 +94,8 @@ function myChart1(){
 }
 
 /*
-    bar | drivetrain | count | static
+    bar | drivetrain
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 */
 function myChart2(){
 
@@ -168,7 +177,8 @@ function myChart2(){
 }
 
 /*
-    type | focus | comparison | dynamic
+    type | focus
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 */
 function myChart3(){
 
