@@ -1,44 +1,40 @@
-/* Table of contents
+/*
+Notes
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+Suggested media queries (taken from skeleton.css):
+    @media (min-width: 400px) {}
+    @media (min-width: 550px) {}
+    @media (min-width: 750px) {}
+    @media (min-width: 1000px) {}
+    @media (min-width: 1200px) {}
+
+ Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 - Temporary properties
 - Typography
-- group 3
-- group 4
-- group 5
-- group 6
-- group 7
-- group 8
+- Nav bar
+- Footer
+- Index.html
+- Use.html
+- Examples.html
+- Demo.html
+- About.html
 - group 9
-- group 10
 */
 
 /* Temporary properties
-
-use for sizing and positioning of box elements
+use these properties to help with sizing and positioning of box elements
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-.temporary17{
-    border: 1px dashed red;
-}
-.temporary27{
-    border: 1px solid lightsalmon;
-}
-.temporary37{
-    border: 1px dashed yellow;
-}
-.temporary47{
-    border: 1px solid limegreen;
-}
-.temporary57{
-    border: 1px dashed lightskyblue;
-}
-.temporary67{
-    border: 1px solid plum;
-}
-.temporary77{
-    border: 1px dashed purple;
-}
+.temporary17    {border: 1px dashed red;}
+.temporary27    {border: 1px solid lightsalmon;}
+.temporary37    {border: 1px dashed yellow;}
+.temporary47    {border: 1px solid limegreen;}
+.temporary57    {border: 1px dashed lightskyblue;}
+.temporary67    {border: 1px solid plum;}
+.temporary77    {border: 1px dashed purple;}
 
-/* Typography *currently using skeleton.css fonts*
+/* Typography 
+currently using skeleton.css fonts
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*@font-face{
     font-family: "Centra No. 2";
@@ -60,34 +56,91 @@ use for sizing and positioning of box elements
     src: url("font/CentraNo2-ThinItalic.otf") format("otf");
 }*/
 
-/* group 3
+/* Nav bar
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media (min-width: 400px) {}
+@media (min-width: 550px) {}
+@media (min-width: 750px) {}
+@media (min-width: 1000px) {}
+@media (min-width: 1200px) {}
 
-
-/* group 4
+/* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media (min-width: 400px) {}
+@media (min-width: 550px) {}
+@media (min-width: 750px) {}
+@media (min-width: 1000px) {}
+@media (min-width: 1200px) {}
 
-
-/* group 5
+/* Index.html
+Landing page
+properties are for individual pages, prefix selectors with class attribute followed by page name
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+.index {
+    background-color: #f1f7fa;
+}
+@media (min-width: 400px) {}
+@media (min-width: 550px) {}
+@media (min-width: 750px) {
+    .index {
+        height: 100vh;
+        width: 100vw;}
+}
+@media (min-width: 1000px) {
+    .index {
+        height: 100vh;
+        width: 100vw;}
+}
+@media (min-width: 1200px) {
+    .index {
+        height: 100vh;
+        width: 100vw;}
+}
 
-
-/* group 6
+/* Use.html
+Explanation
+properties are for individual pages, prefix selectors with class attribute followed by page name
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media (min-width: 400px) {}
+@media (min-width: 550px) {}
+@media (min-width: 750px) {}
+@media (min-width: 1000px) {}
+@media (min-width: 1200px) {}
 
-
-/* group 7
+/* Examples.html
+Example charts
+properties are for individual pages, prefix selectors with class attribute followed by page name
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media (min-width: 400px) {}
+@media (min-width: 550px) {}
+@media (min-width: 750px) {}
+@media (min-width: 1000px) {}
+@media (min-width: 1200px) {}
 
-
-/* group 8
+/* Demo.htm
+End-user manipulation
+properties are for individual pages, prefix selectors with class attribute followed by page name
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media (min-width: 400px) {}
+@media (min-width: 550px) {}
+@media (min-width: 750px) {}
+@media (min-width: 1000px) {}
+@media (min-width: 1200px) {}
+
+/* About.html
+properties are for individual pages, prefix selectors with class attribute followed by page name
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media (min-width: 400px) {}
+@media (min-width: 550px) {}
+@media (min-width: 750px) {}
+@media (min-width: 1000px) {}
+@media (min-width: 1200px) {}
 
 
 /* group 9
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-
-/* group 10
-–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-
+@media (min-width: 400px) {}
+@media (min-width: 550px) {}
+@media (min-width: 750px) {}
+@media (min-width: 1000px) {}
+@media (min-width: 1200px) {}
