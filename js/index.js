@@ -167,6 +167,57 @@ function myChart2() {
     type | focus
     ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 */
-function myChart3(){
-
+function myChart3() {
+    
+  /** Make the connection to external server **/
+  var xhttp = new XMLHttpRequest();
+  
+  xhttp.onreadystatechange = function() {
+      
+      if(this.readyState == 4 && this.status == 200){
+          
+          // Typical action to be performed when the document is ready:
+          var data = JSON.parse(this.responseText);
+          
+          console.log(data[0].Year)
+          
+          // xx
+          var xx;
+          xx = 0;
+          for(var i= 0; i < data.length; i++){
+              if(data[i].Fuel == PQ){
+                  xx += 1;
+              }
+          }
+          console.log(xx);
+          
+          var ctx = document.getElementById("myChart3");
+          
+          var myChart = new Chart(ctx, {
+                                  type: 'bar',
+                                  data: {
+                                  labels: ['xx'],
+                                  datasets: [{
+                                             label: 'Drivetrain',
+                                             data: [xx],
+                                             borderWidth: 1
+                                             }]
+                                  },
+                                  options: {
+                                  scales: {
+                                  yAxes: [{
+                                          ticks: {
+                                          beginAtZero: true
+                                          }
+                                          }]
+                                  }
+                                  }
+                                  });
+      }else{
+          alert("Sorry, we didn't find the file requested");
+      }
+  };
+  xhttp.open("GET", "js/data.json", true);
+  xhttp.send();
+  
 }
