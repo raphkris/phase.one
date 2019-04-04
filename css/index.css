@@ -25,13 +25,13 @@ Suggested media queries (taken from skeleton.css):
 /* Temporary properties
 use these properties to help with sizing and positioning of box elements
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-.temporary17    {border: 1px dashed red;}
-.temporary27    {border: 1px solid lightsalmon;}
-.temporary37    {border: 1px dashed yellow;}
-.temporary47    {border: 1px solid limegreen;}
-.temporary57    {border: 1px dashed lightskyblue;}
-.temporary67    {border: 1px solid plum;}
-.temporary77    {border: 1px dashed purple;}
+.temporary1    {border: 1px dashed red;}
+.temporary2    {border: 1px solid lightsalmon;}
+.temporary3    {border: 1px dashed yellow;}
+.temporary4    {border: 1px solid limegreen;}
+.temporary5    {border: 1px dashed lightskyblue;}
+.temporary6    {border: 1px solid plum;}
+.temporary7    {border: 1px dashed purple;}
 
 /* Typography 
 currently using skeleton.css fonts
@@ -117,7 +117,7 @@ properties are for individual pages, prefix selectors with class attribute follo
 @media (min-width: 1000px) {}
 @media (min-width: 1200px) {}
 
-/* Demo.htm
+/* Demo.html
 End-user manipulation
 properties are for individual pages, prefix selectors with class attribute followed by page name
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */

@@ -1,74 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!--
-    End-user chart manipulation
+    <!--
+        End-user chart manipulation
 
-    This page will display chart and data options to the end-user for creating and manipulating their
-    own chart. An example chart will be predefined.
-    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
--->
+        This page will display chart and data options to the end-user for creating and manipulating their
+        own chart. An example chart will be predefined.
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-<!--
-    Meta tags
-    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
--->
-<meta charset="utf-8">
-<meta name="description" content="Automotive data & statistics">
-<meta name="keywords" content="HTML,CSS,JavaScript,JSON">
-<meta name-="author" content="Raphael and Liam">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+        Meta tags
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <meta name="description" content="Automotive data & statistics">
+    <meta name="keywords" content="HTML,CSS,JavaScript,JSON">
+    <meta name="author" content="Raphael and Liam">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!--
-    External CSS
-    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
--->
-<link href="css/index.css" rel="stylesheet" type="text/css">
-<link href="css/normalize.css" rel="stylesheet" type="text/css">
-<link href="css/skeleton.css" rel="stylesheet" type="text/css">
+    <!--
+        External CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/skeleton.css" rel="stylesheet" type="text/css">
 
-<!--
-    External JavaScript
-    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
--->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <!--
+        External JavaScript
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
 
-<script src="js/index.js" type="text/JavaScript"></script>
+    <script src="js/demo.js" type="text/JavaScript"></script> <!-- Link to separate JavaScript file for this demoChart() -->
 
-<title>AutoStat</title>
+    <title>AutoStat</title>
 
 </head>
 <body class="demo">
 
     <!--
-        nav bar
-    -->
-    <nav class="u-full-width">
+        Nav bar
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <nav class="u-full-width"> <!-- Skeleton framework. Sets width to 100%. -->
         <!--
-                logo container
-        -->
-        <div class="u-pull-left">
-                <p class="logo logo-superscript"><a href="index.html logo logo-main">AutoStat</a>beta</p>
+            Logo container
+        –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div class="u-pull-left"> <!-- Skeleton framework. Floats div containing logo to the left. -->
+            <p class="logo logo-superscript"><a href="index.html">AutoStat</a>beta</p>
         </div>
         <!--
-                nav bar links
-        -->
-        <div class="u-pull-right">
-                <p><a href="use.html"></a></p>
-                <p><a href="examples.html"></a></p>
-                <p><a href="about.html"></a></p>
-                <p><a href="demo.html"></a></p>
-                <button>Demo</button>
+            Nav bar links
+        –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div class="u-pull-right"> <!-- Skeleton framework. Floats div containing links to the right. -->
+            <p><a href="use.html"></a></p>
+            <p><a href="examples.html"></a></p>
+            <p><a href="about.html"></a></p>
+            <button onclick="window.location.href='demo.html'">Demo</button> <!-- Button attracting end user to manipulation chart. Inline JavaScript that links button to demo.html. -->
         </div>
     </nav>
 
     <!--
         Third chart
-        ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-    -->
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div style="height:75vh;width:75vw;">
         <canvas id="myChart3" width="100%" height="100%"></canvas>
     </div>
