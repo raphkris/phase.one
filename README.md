@@ -1,6 +1,18 @@
 # phase.one
 Dunwoody CWEB1111.01 Spring 2019 | Team Project Phase 1
 
+# Contents
+* [Reference](https://github.com/raphkris/phase.one#reference)
+* [Requirements](https://github.com/raphkris/phase.one#requirements)
+* [Things to complete](https://github.com/raphkris/phase.one#things-to-complete)
+    * [Universal](https://github.com/raphkris/phase.one#universal)
+    * [index.html](https://github.com/raphkris/phase.one#index.html)
+    * [use.html](https://github.com/raphkris/phase.one#use.html)
+    * [examples.html](https://github.com/raphkris/phase.one#examples.html)
+    * [demo.html](https://github.com/raphkris/phase.one#demo.html)
+    * [index.js](https://github.com/raphkris/phase.one#index.js)
+    * [data.json shortcuts legend](https://github.com/raphkris/phase.one#datajson-shortcuts-legend)
+
 # Reference
 - [phase.one](https://raphkris.github.io/phase.one/) link (attached to master branch)
 - [Chart.js](https://www.chartjs.org/docs/latest/) link and tutorial. front end framework for charts.
@@ -29,6 +41,63 @@ Dunwoody CWEB1111.01 Spring 2019 | Team Project Phase 1
 - [ ] Review selection process (topic/data/tools/framework/algorithms)
 - [ ] Explain (mission/objectives)
 - [ ] Include (sorting algorithm *phase.two*/front-end JavaScript framework)
+
+# Things to complete
+## Universal
+### Nav bar
+The nav bar will be used in all five (index, use, examples, demo, about) html pages, immediately following the opening `<body>` tag.
+A possible solution:
+```
+html
+<body class="FILENAME">    <!-- Where FILENAME is the name of the current file excluding the filetype. This is for CSS use and is irrelevant to the nav bar -->
+<nav class="u-full-width"> <!-- Skeleton framework. Sets width to 100%. -->
+    <!--
+        logo container
+    -->
+    <div class="u-pull-left"> <!-- Skeleton framework. Floats logo div to the left. -->
+        <p class="logo logo-superscript">
+	    <a href="index.html logo logo-main">AutoStat</a>
+	</p>
+    </div>
+    <!--
+        nav bar links
+    -->
+    <div class="u-pull-right"> <!-- Skeleton framework. Floats links div to the right. -->
+        <p><a href="use.html">Use</a></p>
+        <p><a href="examples.html">Examples</a></p>
+        <p><a href="demo.html">Demo</a></p>
+        <p><a href="about.html">About</a></p>
+        <button>Demo</button>
+    </div>
+</nav>
+	<!-- Other body elements... -->
+</body>
+```
+### Footer
+> nothing yet...
+
+## index.html
+### Welcome end user
+Concise greeting to end user. No explanation on this page, it'll be given in `use.html`.
+### "Hero image"
+Find background for page that is relevant and attracts end user and doesn't distract from the greeting.
+### Call to action button
+"Learn more" leads end user directly to `use.html`.
+
+## use.html
+### Explanation
+Give user the explanation of who the data is for, what the data are, when they were created, where they came from, and why the data are important.
+
+## examples.html
+### Charts
+Min two different kinds of charts (not manipulated by end user). JavaScript code for charts are in `index.js`, named `myChart#()` where # = numerical order of chart on page.
+
+## demo.html
+### Chart manipulation
+One chart that the end user can manipulate. Page loads with an example. Chart is `demoChart()` in its' own file, `demo.js`.
+
+## index.js
+All charts from `examples.html` are coded here. End-user manipulated chart isn't included in this file, it has its' own (`demo.html`).
 
 ## data.json shortcuts legend
 ### Make
@@ -61,18 +130,20 @@ LAM     | Lamborghini   | ITL     |---| VW        | Volkswagen    | DE
 LR      | Land Rover    | UK      |---| VOL       | Volvo         | SE
 
 #### Make by Country
-BMW     | ðŸ‡«ðŸ‡·    | FERR  | HON   | HYUN  | ðŸ‡³ðŸ‡±    | VOL   | BEN   | CAD
-MAY     | ðŸ‡«ðŸ‡·    | FIAT  | INF   | KIA   | ðŸ‡³ðŸ‡±    | ðŸ‡¸ðŸ‡ª    | LR    | CHEV
-MB      | ðŸ‡«ðŸ‡·    | LAM   | LEX   | ðŸ‡°ðŸ‡·    | ðŸ‡³ðŸ‡±    | ðŸ‡¸ðŸ‡ª    | LOT   | CHR
-POR     | ðŸ‡«ðŸ‡·    | MAS   | MAZ   | ðŸ‡°ðŸ‡·    | ðŸ‡³ðŸ‡±    | ðŸ‡¸ðŸ‡ª    | RR    | DOD
-VW      | ðŸ‡«ðŸ‡·    | ðŸ‡®ðŸ‡¹    | MITS  | ðŸ‡°ðŸ‡·    | ðŸ‡³ðŸ‡±    | ðŸ‡¸ðŸ‡ª    | ðŸ‡¬ðŸ‡§    | GMC
-ðŸ‡©ðŸ‡ª      | ðŸ‡«ðŸ‡·    | ðŸ‡®ðŸ‡¹    | NIS   | ðŸ‡°ðŸ‡·    | ðŸ‡³ðŸ‡±    | ðŸ‡¸ðŸ‡ª    | ðŸ‡¬ðŸ‡§    | HUM
-ðŸ‡©ðŸ‡ª      | ðŸ‡«ðŸ‡·    | ðŸ‡®ðŸ‡¹    | SCI   | ðŸ‡°ðŸ‡·    | ðŸ‡³ðŸ‡±    | ðŸ‡¸ðŸ‡ª    | ðŸ‡¬ðŸ‡§    | LIN
-ðŸ‡©ðŸ‡ª      | ðŸ‡«ðŸ‡·    | ðŸ‡®ðŸ‡¹    | SUB   | ðŸ‡°ðŸ‡·    | ðŸ‡³ðŸ‡±    | ðŸ‡¸ðŸ‡ª    | ðŸ‡¬ðŸ‡§    | OLDS
-ðŸ‡©ðŸ‡ª      | ðŸ‡«ðŸ‡·    | ðŸ‡®ðŸ‡¹    | SUZ   | ðŸ‡°ðŸ‡·    | ðŸ‡³ðŸ‡±    | ðŸ‡¸ðŸ‡ª    | ðŸ‡¬ðŸ‡§    | PLY
-ðŸ‡©ðŸ‡ª      | ðŸ‡«ðŸ‡·    | ðŸ‡®ðŸ‡¹    | TOY   | ðŸ‡°ðŸ‡·    | ðŸ‡³ðŸ‡±    | ðŸ‡¸ðŸ‡ª    | ðŸ‡¬ðŸ‡§    | PON
-ðŸ‡©ðŸ‡ª      | ðŸ‡«ðŸ‡·    | ðŸ‡®ðŸ‡¹    | ðŸ‡¯ðŸ‡µ    | ðŸ‡°ðŸ‡·    | ðŸ‡³ðŸ‡±    | ðŸ‡¸ðŸ‡ª    | ðŸ‡¬ðŸ‡§    | TSLA
-ðŸ‡©ðŸ‡ª      | ðŸ‡«ðŸ‡·    | ðŸ‡®ðŸ‡¹    | ðŸ‡¯ðŸ‡µ    | ðŸ‡°ðŸ‡·    | ðŸ‡³ðŸ‡±    | ðŸ‡¸ðŸ‡ª    | ðŸ‡¬ðŸ‡§    | ðŸ‡ºðŸ‡
+```
+BMW     | 🇫🇷    | FERR  | HON   | HYUN  | 🇳🇱    | VOL   | BEN   | CAD
+MAY     | 🇫🇷    | FIAT  | INF   | KIA   | 🇳🇱    | 🇸🇪    | LR    | CHEV
+MB      | 🇫🇷    | LAM   | LEX   | 🇰🇷    | 🇳🇱    | 🇸🇪    | LOT   | CHR
+POR     | 🇫🇷    | MAS   | MAZ   | 🇰🇷    | 🇳🇱    | 🇸🇪    | RR    | DOD
+VW      | 🇫🇷    | 🇮🇹    | MITS  | 🇰🇷    | 🇳🇱    | 🇸🇪    | 🇬🇧    | GMC
+🇩🇪      | 🇫🇷    | 🇮🇹    | NIS   | 🇰🇷    | 🇳🇱    | 🇸🇪    | 🇬🇧    | HUM
+🇩🇪      | 🇫🇷    | 🇮🇹    | SCI   | 🇰🇷    | 🇳🇱    | 🇸🇪    | 🇬🇧    | LIN
+🇩🇪      | 🇫🇷    | 🇮🇹    | SUB   | 🇰🇷    | 🇳🇱    | 🇸🇪    | 🇬🇧    | OLDS
+🇩🇪      | 🇫🇷    | 🇮🇹    | SUZ   | 🇰🇷    | 🇳🇱    | 🇸🇪    | 🇬🇧    | PLY
+🇩🇪      | 🇫🇷    | 🇮🇹    | TOY   | 🇰🇷    | 🇳🇱    | 🇸🇪    | 🇬🇧    | PON
+🇩🇪      | 🇫🇷    | 🇮🇹    | 🇯🇵    | 🇰🇷    | 🇳🇱    | 🇸🇪    | 🇬🇧    | TSLA
+🇩🇪      | 🇫🇷    | 🇮🇹    | 🇯🇵    | 🇰🇷    | 🇳🇱    | 🇸🇪    | 🇬🇧    | 🇺🇸
+```
 
 ### Engine Fuel Type -> Fuel
 Short   | Original
