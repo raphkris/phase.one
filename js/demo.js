@@ -4,7 +4,7 @@
     ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 */
 
-function myChart3() {
+function demoChart() {
     
     
     /** Make the connection to external server **/
@@ -24,7 +24,6 @@ function myChart3() {
             for(var i= 0; i < data.length; i++){
                 if(data[i].xx == 4){
                     xx += 1;
-                }
                 }
             }
             console.log(xx);
@@ -50,12 +49,13 @@ function myChart3() {
                     }]
                 }
             }
-            });
-        }else{
-            alert("Sorry, we didn't find the file requested");
-        }
-    };
-    xhttp.open("GET", "js/data.json", true);
-    xhttp.send();
+          });
     
-  }
+        }else{
+          alert("Sorry, we didn't find the file requested");
+        }
+        };
+      xhttp.open("GET", "js/data.json", true);
+      xhttp.send();
+    
+    }

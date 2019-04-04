@@ -47,22 +47,23 @@ Dunwoody CWEB1111.01 Spring 2019 | Team Project Phase 1
 ### Nav bar
 The nav bar will be used in all five (index, use, examples, demo, about) html pages, immediately following the opening `<body>` tag.
 A possible solution:
-```
-html
-<body class="FILENAME">    <!-- Where FILENAME is the name of the current file excluding the filetype. This is for CSS use and is irrelevant to the nav bar -->
+```html
+<body class="FILENAME">    <!-- Where FILENAME is the name of the current file excluding the filetype.
+                                This is for CSS use and is irrelevant to the nav bar -->
+
 <nav class="u-full-width"> <!-- Skeleton framework. Sets width to 100%. -->
     <!--
         logo container
     -->
-    <div class="u-pull-left"> <!-- Skeleton framework. Floats logo div to the left. -->
+    <div class="u-pull-left"> <!-- Skeleton framework. Floats div containing logo to the left. -->
         <p class="logo logo-superscript">
-	    <a href="index.html logo logo-main">AutoStat</a>
-	</p>
+	    <a href="index.html logo logo-main">AutoStat</a>beta
+	    </p>
     </div>
     <!--
         nav bar links
     -->
-    <div class="u-pull-right"> <!-- Skeleton framework. Floats links div to the right. -->
+    <div class="u-pull-right"> <!-- Skeleton framework. Floats div containing links to the right. -->
         <p><a href="use.html">Use</a></p>
         <p><a href="examples.html">Examples</a></p>
         <p><a href="demo.html">Demo</a></p>
@@ -70,6 +71,7 @@ html
         <button>Demo</button>
     </div>
 </nav>
+
 	<!-- Other body elements... -->
 </body>
 ```
@@ -78,7 +80,7 @@ html
 
 ## index.html
 ### Welcome end user
-Concise greeting to end user. No explanation on this page, it'll be given in `use.html`.
+Concise greeting to end user. No explanation on this page because that'll be given in `use.html`.
 ### "Hero image"
 Find background for page that is relevant and attracts end user and doesn't distract from the greeting.
 ### Call to action button
@@ -99,8 +101,8 @@ One chart that the end user can manipulate. Page loads with an example. Chart is
 ## index.js
 All charts from `examples.html` are coded here. End-user manipulated chart isn't included in this file, it has its' own (`demo.html`).
 
-## data.json shortcuts legend
-### Make
+# data.json shortcuts legend
+## Make
 Short   | Original      | Country |---| Short     | Original      | Country
 :---:   | :---:         | :---:   |---| :---:     | :---:         | :---:
 **Make**| **Make**      |         |---| **Make**  | **Make**      |
@@ -129,8 +131,9 @@ KIA     | Kia           | KR      |---| TOY       | Toyota        | JPN
 LAM     | Lamborghini   | ITL     |---| VW        | Volkswagen    | DE
 LR      | Land Rover    | UK      |---| VOL       | Volvo         | SE
 
-#### Make by Country
+## Make by Country
 ```
+DE      | FR    | ITL   | JPN   | KR    | NL    | SE    | UK    | US
 BMW     | 🇫🇷    | FERR  | HON   | HYUN  | 🇳🇱    | VOL   | BEN   | CAD
 MAY     | 🇫🇷    | FIAT  | INF   | KIA   | 🇳🇱    | 🇸🇪    | LR    | CHEV
 MB      | 🇫🇷    | LAM   | LEX   | 🇰🇷    | 🇳🇱    | 🇸🇪    | LOT   | CHR
@@ -145,7 +148,7 @@ VW      | 🇫🇷    | 🇮🇹    | MITS  | 🇰🇷    | 🇳🇱    | 🇸�
 🇩🇪      | 🇫🇷    | 🇮🇹    | 🇯🇵    | 🇰🇷    | 🇳🇱    | 🇸🇪    | 🇬🇧    | 🇺🇸
 ```
 
-### Engine Fuel Type -> Fuel
+## Engine Fuel Type -> Fuel
 Short   | Original
 :---:   | :---:
 **Fuel**| **Engine Fuel Type**
@@ -159,7 +162,7 @@ PC      | premium unleaded (recommended)
 PQ      | premium unleaded (required)
 R       | regular unleaded
 
-### Driven_Wheels -> DT
+## Driven_Wheels -> DT
 Short   | Original
 :---:   | :---:
 **DT**  | **Driven_Wheels**
@@ -168,7 +171,7 @@ A       | all wheel drive
 F       | front wheel drive
 R       | rear wheel drive
 
-### Transmission Type -> Trans
+## Transmission Type -> Trans
 Short       | Original
 :---:       | :---:
 **Trans**   | **Transmission Type**
@@ -178,7 +181,7 @@ A           | AUTOMATIC
 D           | DIRECT_DRIVE
 AMT         | AUTOMATED_MANUAL
 
-### Vehicle Size -> Size
+## Vehicle Size -> Size
 Short   | Original
 :---:   | :---:
 **Size**| **Vehicle Size**
@@ -186,7 +189,7 @@ C       | Compact
 M       | Midsize
 L       | Large
 
-### Vehicle Style -> Style
+## Vehicle Style -> Style
 Short       | Original
 :---:       | :---:
 **Style**   | **Vehicle Style**
@@ -207,7 +210,7 @@ RCP         | Regular Cab Pickup
 S           | Sedan
 W           | Wagon
 
-### Market Category -> MCAT
+## Market Category -> MCAT
 
 *changes not yet made in data.json.*
 
