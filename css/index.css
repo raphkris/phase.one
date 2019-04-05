@@ -22,16 +22,17 @@ Suggested media queries (taken from skeleton.css):
 - group 9
 */
 
-/* Temporary properties
+/*
+Temporary properties
 use these properties to help with sizing and positioning of box elements
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-.temporary17    {border: 1px dashed red;}
-.temporary27    {border: 1px solid lightsalmon;}
-.temporary37    {border: 1px dashed yellow;}
-.temporary47    {border: 1px solid limegreen;}
-.temporary57    {border: 1px dashed lightskyblue;}
-.temporary67    {border: 1px solid plum;}
-.temporary77    {border: 1px dashed purple;}
+.temporary1    {border: 1px dashed red;}
+.temporary2    {border: 1px solid lightsalmon;}
+.temporary3    {border: 1px dashed yellow;}
+.temporary4    {border: 1px solid limegreen;}
+.temporary5    {border: 1px dashed lightskyblue;}
+.temporary6    {border: 1px solid plum;}
+.temporary7    {border: 1px dashed purple;}
 
 /* Typography 
 currently using skeleton.css fonts
@@ -58,6 +59,7 @@ currently using skeleton.css fonts
 
 /* Nav bar
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+nav {}
 @media (min-width: 400px) {}
 @media (min-width: 550px) {}
 @media (min-width: 750px) {}
@@ -66,6 +68,7 @@ currently using skeleton.css fonts
 
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+footer {}
 @media (min-width: 400px) {}
 @media (min-width: 550px) {}
 @media (min-width: 750px) {}
@@ -77,8 +80,7 @@ Landing page
 properties are for individual pages, prefix selectors with class attribute followed by page name
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .index {
-    background-color: #f1f7fa;
-}
+    background-color: #f1f7fa;}
 @media (min-width: 400px) {}
 @media (min-width: 550px) {}
 @media (min-width: 750px) {
@@ -101,6 +103,7 @@ properties are for individual pages, prefix selectors with class attribute follo
 Explanation
 properties are for individual pages, prefix selectors with class attribute followed by page name
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+.use {}
 @media (min-width: 400px) {}
 @media (min-width: 550px) {}
 @media (min-width: 750px) {}
@@ -111,16 +114,18 @@ properties are for individual pages, prefix selectors with class attribute follo
 Example charts
 properties are for individual pages, prefix selectors with class attribute followed by page name
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+.examples {}
 @media (min-width: 400px) {}
 @media (min-width: 550px) {}
 @media (min-width: 750px) {}
 @media (min-width: 1000px) {}
 @media (min-width: 1200px) {}
 
-/* Demo.htm
+/* Demo.html
 End-user manipulation
 properties are for individual pages, prefix selectors with class attribute followed by page name
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+.demo {}
 @media (min-width: 400px) {}
 @media (min-width: 550px) {}
 @media (min-width: 750px) {}
@@ -130,6 +135,7 @@ properties are for individual pages, prefix selectors with class attribute follo
 /* About.html
 properties are for individual pages, prefix selectors with class attribute followed by page name
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+.about {}
 @media (min-width: 400px) {}
 @media (min-width: 550px) {}
 @media (min-width: 750px) {}

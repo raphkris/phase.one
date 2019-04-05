@@ -1,89 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!--
+    <!--
         Landing page
         
         This is the landing page. Rendered will be a welcome message for the end-user, an image that draws
         them in, and a call to action.
-        ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-  -->
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-  <!--
+    <!--
         Meta tags
-        ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-  -->
-  <meta charset="utf-8">
-  <meta name="description" content="Automotive data & statistics">
-  <meta name="keywords" content="HTML,CSS,JavaScript,JSON">
-  <meta name-="author" content="Raphael and Liam">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <meta name="description" content="Automotive data & statistics">
+    <meta name="keywords" content="HTML,CSS,JavaScript,JSON">
+    <meta name="author" content="Raphael and Liam">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!--
+    <!--
         External CSS
-        ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-  -->
-  <link href="css/index.css" rel="stylesheet" type="text/css">
-  <link href="css/normalize.css" rel="stylesheet" type="text/css">
-  <link href="css/skeleton.css" rel="stylesheet" type="text/JavaScript">
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/skeleton.css" rel="stylesheet" type="text/css">
 
-  <!--
+    <!--
         External JavaScript
-        ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-  -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
 
-  <script src="js/index.js"></script>
+    <script src="js/index.js" type="text/JavaScript"></script>
 
-  <title>AutoStat</title>
+    <title>AutoStat</title>
 
 </head>
 <body class="index">
 
-  <!--
-        Welcome message for end-user
-        ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-  -->
-  <header>
-    <h1>Welcome</h1>
-    <h2>This page displays charts with data on numerous vehicles</h2>
-    <h3>This is who the data is for. This is when the data was extracted. This is where the data came from. This is why the data is important.</h3>
-  </header>
+    <!--
+        Nav bar
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <nav class="u-full-width"> <!-- Skeleton framework. Sets width to 100%. -->
+        <!--
+            Logo container
+        –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div class="u-pull-left"> <!-- Skeleton framework. Floats div containing logo to the left. -->
+            <p class="logo logo-superscript"><a href="index.html">AutoStat</a>beta</p>
+        </div>
+        <!--
+            Nav bar links
+        –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div class="u-pull-right"> <!-- Skeleton framework. Floats div containing links to the right. -->
+            <p><a href="use.html"></a></p>
+            <p><a href="examples.html"></a></p>
+            <p><a href="about.html"></a></p>
+            <button onclick="window.location.href='demo.html'">Demo</button> <!-- Button attracting end user to manipulation chart. Inline JavaScript that links button to demo.html. -->
+        </div>
+    </nav>
 
-  
+    <!--
+        Welcome message for end-user
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <header>
+        <h1>Welcome</h1>
+        <h2>This page displays charts with data on numerous vehicles</h2>
+        <h3>This is who the data is for. This is when the data was extracted. This is where the data came from. This is why the data is important.</h3>
+    </header>
 
 </body>
-
-/*
- 
- css
- 
- index.html
- 
-     height: 100vh
-     width: 100vw
-     background-color: #F1F7FA
- 
- .logo
- 
-    color: #fff
- 
- nav div p a
- 
-    color: #2A436B
-
- model sites:
- 
-    https://cdn.dribbble.com/users/336152/screenshots/5615193/attachments/1213627/carlens_-_landing_page.png
- 
-    https://cdn.dribbble.com/users/692322/screenshots/3873826/attachments/879363/1.png
- 
- front html framework
- 
-    http://getskeleton.com/?#examples
- 
-*/
 </html>
