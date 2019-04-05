@@ -5,21 +5,10 @@
 */
 
 function demoChart() {
-    
-    
-    /** Make the connection to external server **/
     var xhttp = new XMLHttpRequest();
-    
     xhttp.onreadystatechange = function() {
-        
         if(this.readyState == 4 && this.status == 200){
-            
-            // Typical action to be performed when the document is ready:
             var data = JSON.parse(this.responseText);
-            
-            console.log(data[0].Year)
-            
-            // xx, xx, xx, xx
             var xx = 0;
             for(var i= 0; i < data.length; i++){
                 if(data[i].xx == 4){
@@ -27,9 +16,7 @@ function demoChart() {
                 }
             }
             console.log(xx);
-            
             var ctx = document.getElementById("demoChart");
-            
             var myChart = new Chart(ctx, {
             type: 'bar',
             data: {
@@ -56,6 +43,5 @@ function demoChart() {
         }
         };
       xhttp.open("GET", "js/data.json", true);
-      xhttp.send();
-    
-    }
+      xhttp.send();    
+}

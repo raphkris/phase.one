@@ -95,45 +95,52 @@ function myChart1(){
 } /* End of myChart1() */
 
 /*
-    bar | drivetrain
+    Bar graph | Count of how many cars have a certain drivetrain
     –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 function myChart2() {
-    
-/** Make the connection to external server **/
+    /*
+        Make the connection to external server
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 var xhttp = new XMLHttpRequest();
 
 xhttp.onreadystatechange = function() {
     
     if(this.readyState == 4 && this.status == 200){
         
-        // Typical action to be performed when the document is ready:
+        /*
+            Typical action to be performed when the document is ready
+        –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
         var data = JSON.parse(this.responseText);
-        
-        console.log(data[0].Year)
-        
-        // 4WD, AWD, FWD, RWD
-        var WD = 0; AWD = 0; FWD = 0; RWD = 0;
+
+        /*
+            Looping structure that counts how many cars have a certain drivetrain
+        –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+        var WD = 0; AWD = 0; FWD = 0; RWD = 0; /* 4WD, AWD, FWD, RWD */
         for(var i= 0; i < data.length; i++){
             if(data[i].DT == 4){
                 WD += 1;
             }
-            else if(data[i].DT == A){
+            else if(data[i].DT == "A"){
                 AWD += 1;
             }
-            else if(data[i].DT == F){
+            else if(data[i].DT == "F"){
                 FWD += 1;
             }
-            else if(data[i].DT == R){
+            else if(data[i].DT == "R"){
                 RWD += 1;
             }
         }
-        console.log(WD);
-        console.log(AWD);
-        console.log(FWD);
-        console.log(RWD);
-        
+        /*
+            Log to console to check for errors
+        –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+        console.log("4WD = ", WD);
+        console.log("AWD = ", AWD);
+        console.log("FWD = ", FWD);
+        console.log("RWD = ", RWD);
+        /*
+            Create chart after looping structure
+        –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
         var ctx = document.getElementById("myChart2");
-        
         var myChart = new Chart(ctx, {
         type: 'bar',
         data: {
@@ -154,11 +161,13 @@ xhttp.onreadystatechange = function() {
             }
         }
         });
-    }else{
-        alert("Sorry, we didn't find the file requested");
-    }
-};
-xhttp.open("GET", "js/data.json", true);
-xhttp.send();
+        }else{ /* if(this.readyState != 4 && this.status != 200) display the following message to the end user */
+        alert("Sorry, we didn't find the file requested");}
+    };
 
-}
+    /*
+        Send data to the web page
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+    xhttp.open("GET", "js/data.json", true);
+    xhttp.send();
+} /* End of myChart2() */
