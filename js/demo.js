@@ -38,9 +38,8 @@ function demoChart() {
             }
           });
     
-        }else{
-          alert("Sorry, we didn't find the file requested");
-        }
+        }//else{
+          //alert("Sorry, we didn't find the file requested");}
         };
       xhttp.open("GET", "js/data.json", true);
       xhttp.send();    
