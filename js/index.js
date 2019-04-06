@@ -83,8 +83,8 @@ function myChart1(){
                 }
             }
         });
-        }else{ /* if(this.readyState != 4 && this.status != 200) display the following message to the end user */
-        alert("Sorry, we didn't find the file requested");}
+        }//else{ /* if(this.readyState != 4 && this.status != 200) display the following message to the end user */
+        //alert("Sorry, we didn't find the file requested");}
     };
     
     /*
@@ -161,8 +161,8 @@ xhttp.onreadystatechange = function() {
             }
         }
         });
-        }else{ /* if(this.readyState != 4 && this.status != 200) display the following message to the end user */
-        alert("Sorry, we didn't find the file requested");}
+        }//else{ /* if(this.readyState != 4 && this.status != 200) display the following message to the end user */
+        //alert("Sorry, we didn't find the file requested");}
     };
 
     /*
