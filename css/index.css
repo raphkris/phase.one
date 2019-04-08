@@ -6,7 +6,14 @@ Suggested media queries (taken from skeleton.css):
     @media (min-width: 550px) {}
     @media (min-width: 750px) {}
     @media (min-width: 1000px) {}
-    @media (min-width: 1200px) {}
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+Color palette:
+#ae213f Deep Carmine (highlights/accents)
+#6c6c6d Dim Gray (large text)
+#364156 Charcoal / dark blue (small text)
+#f5f6fa White Smoke (body background)
+#040302 Rich Black / FOGRA39 (default text color)
+#dfe0e4 Platinum (other text)
 
  Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -54,17 +61,62 @@ currently using skeleton.css fonts
     src: url("font/CentraNo2-Medium.otf") format("otf");
     src: url("font/CentraNo2-MediumItalic.otf") format("otf");
     src: url("font/CentraNo2-Thin.otf") format("otf");
-    src: url("font/CentraNo2-ThinItalic.otf") format("otf");
-}*/
+    src: url("font/CentraNo2-ThinItalic.otf") format("otf");}*/
+body {
+    color: #040302;}
 
 /* Nav bar
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-nav {}
+nav a,
+nav a:link,
+nav a:visited,
+nav a:hover {
+    color: #dfe0e4;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 2.0rem;
+    text-transform: uppercase;}
+nav a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  background: #dfe0e4;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;}
+nav a:hover:after { 
+  width: 100%;}
+nav button,
+nav button:focus {
+    color: #dfe0e4;
+    font-weight: 200;
+    font-size: 2.25rem;
+    background-color: #fff;;
+    border-radius: 18px;
+    border: 1px solid #ae213f;
+    transition: 0.5s;}
+nav button:hover {
+    color: #fff;
+    background-color: #ae213f;
+    border-color: none;
+    transition: 0.5s;}
 @media (min-width: 400px) {}
 @media (min-width: 550px) {}
 @media (min-width: 750px) {}
-@media (min-width: 1000px) {}
-@media (min-width: 1200px) {}
+@media (min-width: 1000px) {
+    nav {
+        height: 10vh;}
+    nav > div {
+        height: 5vh;
+        margin: 2.5vh auto;}
+    nav a,
+    nav a:link,
+    nav a:visited,
+    nav a:hover {
+        font-size: 2.0rem;}
+}
 
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -73,16 +125,28 @@ footer {}
 @media (min-width: 550px) {}
 @media (min-width: 750px) {}
 @media (min-width: 1000px) {}
-@media (min-width: 1200px) {}
 
 /* Index.html
 Landing page
 properties are for individual pages, prefix selectors with class attribute followed by page name
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .index {
-    background-color: #f1f7fa;}
-@media (min-width: 400px) {}
-@media (min-width: 550px) {}
+    background-image: url("../img/jonathan-gallegos-722421-unsplash.jpg"); /* The image used */
+    background-color: #f5f6fa; /* Used if the image is unavailable */
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */}
+@media (min-width: 400px) {
+    .index {
+    height: 100vh;
+    width: 100vw;
+}
+@media (min-width: 550px) {
+    .index {
+    height: 100vh;
+    width: 100vw;
+}
 @media (min-width: 750px) {
     .index {
         height: 100vh;
@@ -91,56 +155,73 @@ properties are for individual pages, prefix selectors with class attribute follo
 @media (min-width: 1000px) {
     .index {
         height: 100vh;
-        width: 100vw;}
-}
-@media (min-width: 1200px) {
-    .index {
-        height: 100vh;
-        width: 100vw;}
+        width: 100vw;
+        position: relative;}
+    .index header {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);}
+    .index h1 {
+        text-align: center;
+        font-size: 22.0rem;
+        color: #F5F6FA;}
+    .index h2 {
+        text-align: center;
+        font-size: 5.0rem;
+        color: #F5F6FA;}
 }
 
 /* Use.html
 Explanation
 properties are for individual pages, prefix selectors with class attribute followed by page name
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-.use {}
+.use {
+    background-color: #f5f6fa;}
 @media (min-width: 400px) {}
 @media (min-width: 550px) {}
 @media (min-width: 750px) {}
 @media (min-width: 1000px) {}
-@media (min-width: 1200px) {}
 
 /* Examples.html
 Example charts
 properties are for individual pages, prefix selectors with class attribute followed by page name
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-.examples {}
+.examples {
+    background-color: #f5f6fa;}
 @media (min-width: 400px) {}
 @media (min-width: 550px) {}
 @media (min-width: 750px) {}
 @media (min-width: 1000px) {}
-@media (min-width: 1200px) {}
 
 /* Demo.html
 End-user manipulation
 properties are for individual pages, prefix selectors with class attribute followed by page name
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-.demo {}
+.demo {
+    background-color: #f5f6fa;}
 @media (min-width: 400px) {}
 @media (min-width: 550px) {}
 @media (min-width: 750px) {}
 @media (min-width: 1000px) {}
-@media (min-width: 1200px) {}
 
 /* About.html
 properties are for individual pages, prefix selectors with class attribute followed by page name
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-.about {}
+.about {
+    background-color: #f5f6fa;}
 @media (min-width: 400px) {}
 @media (min-width: 550px) {}
-@media (min-width: 750px) {}
-@media (min-width: 1000px) {}
-@media (min-width: 1200px) {}
+@media (min-width: 750px) {
+    .index {
+    height: 100vh;
+    width: 100vw;
+}
+@media (min-width: 1000px) {
+    .index {
+    height: 100vh;
+    width: 100vw;
+}
 
 
 /* group 9
@@ -149,4 +230,3 @@ properties are for individual pages, prefix selectors with class attribute follo
 @media (min-width: 550px) {}
 @media (min-width: 750px) {}
 @media (min-width: 1000px) {}
-@media (min-width: 1200px) {}
