@@ -155,8 +155,8 @@ Short   | Original
 N       | N/A
 D       | diesel
 E       | electric
-FPCE85  | flex-fuel (premium unleaded recommended/E85)
-FRE85   | flex-fuel (unleaded/E85)
+FPCE  | flex-fuel (premium unleaded recommended/E85)
+FRE   | flex-fuel (unleaded/E85)
 NAT     | natural gas
 PC      | premium unleaded (recommended)
 PQ      | premium unleaded (required)
