@@ -140,12 +140,12 @@ properties are for individual pages, prefix selectors with class attribute follo
 @media (min-width: 400px) {
     .index {
     height: 100vh;
-    width: 100vw;
+    width: 100vw;}
 }
 @media (min-width: 550px) {
     .index {
     height: 100vh;
-    width: 100vw;
+    width: 100vw;}
 }
 @media (min-width: 750px) {
     .index {
@@ -215,12 +215,12 @@ properties are for individual pages, prefix selectors with class attribute follo
 @media (min-width: 750px) {
     .index {
     height: 100vh;
-    width: 100vw;
+    width: 100vw;}
 }
 @media (min-width: 1000px) {
     .index {
     height: 100vh;
-    width: 100vw;
+    width: 100vw;}
 }
 
 
