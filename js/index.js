@@ -116,7 +116,7 @@ xhttp.onreadystatechange = function() {
             Looping structure that counts how many cars have a certain drivetrain
         –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
         var WD = 0; AWD = 0; FWD = 0; RWD = 0; /* 4WD, AWD, FWD, RWD */
-        for(var i= 0; i < data.length; i++){
+        for(var i = 0; i < data.length; i++){
             if(data[i].DT == 4){
                 WD += 1;
             }
