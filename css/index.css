@@ -18,6 +18,7 @@ Color palette:
  Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 - Temporary properties
+- Universal
 - Typography
 - Nav bar
 - Footer
@@ -65,6 +66,16 @@ currently using skeleton.css fonts
 body {
     color: #040302;}
 
+/* Universal
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+html {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; }/* Non-prefixed version, currently supported by Chrome and Opera */
+
 /* Nav bar
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 nav a,
@@ -86,22 +97,10 @@ nav a:after {
   background: #dfe0e4;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;}
+nav .demoLink:after {
+    background: #ae213f;}
 nav a:hover:after { 
   width: 100%;}
-nav button,
-nav button:focus {
-    color: #dfe0e4;
-    font-weight: 200;
-    font-size: 2.25rem;
-    background-color: #fff;;
-    border-radius: 18px;
-    border: 1px solid #ae213f;
-    transition: 0.5s;}
-nav button:hover {
-    color: #fff;
-    background-color: #ae213f;
-    border-color: none;
-    transition: 0.5s;}
 @media (min-width: 400px) {}
 @media (min-width: 550px) {}
 @media (min-width: 750px) {}
@@ -116,6 +115,9 @@ nav button:hover {
     nav a:visited,
     nav a:hover {
         font-size: 2.0rem;}
+    nav .demoLink:hover {
+        color: #ae213f;
+        transition: 0.25s;}
 }
 
 /* Footer
@@ -136,7 +138,9 @@ properties are for individual pages, prefix selectors with class attribute follo
     height: 500px; /* You must set a specified height */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */}
+    background-size: cover; /* Resize the background image to cover the entire container */
+    overflow: hidden; /* Prevent scrolling */
+    margin: 0;} /* Prevent scrolling */
 @media (min-width: 400px) {
     .index {
     height: 100vh;
@@ -156,7 +160,8 @@ properties are for individual pages, prefix selectors with class attribute follo
     .index {
         height: 100vh;
         width: 100vw;
-        position: relative;}
+        position: relative;
+        text-align: center;}
     .index header {
         position: absolute;
         top: 50%;
@@ -170,6 +175,8 @@ properties are for individual pages, prefix selectors with class attribute follo
         text-align: center;
         font-size: 5.0rem;
         color: #F5F6FA;}
+    .index button {
+        }
 }
 
 /* Use.html
