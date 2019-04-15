@@ -18,8 +18,9 @@ Table of contents
 3           xhttp.onreadystatechange = function() {
 4               if(this.readyState == 4 && this.status == 200){
 5                   var data = JSON.parse(this.responseText);
-6                   var xx = 0;                                         All variables already declared.
-7                   for(var i = 0; i < data.length; i++){
+                    var DE = 0; FR = 0; ITL = 0; JPN = 0; KR = 0; NL = 0; SE = 0; UK = 0; US = 0; ACU = 0; ALFA = 0; AM = 0; AUDI = 0; BEN = 0; BMW = 0; BUG = 0; BUI = 0; CAD = 0; CHEV = 0; CHR = 0; DOD = 0; FERR = 0; FIAT = 0; FORD = 0; GEN = 0; GMC = 0; HON = 0; HUM = 0; HYUN = 0; INF = 0; KIA = 0; LAM = 0; LR = 0; LEX = 0; LIN = 0; LOT = 0; MAS = 0; MAY = 0; MAZ = 0; MCLA = 0; MB = 0; MITS = 0; NIS = 0; OLDS = 0; PLY = 0; PON = 0; POR = 0; RR = 0; SAA = 0; SCI = 0; SPY = 0; SUB = 0; SUZ = 0; TSLA = 0; TOY = 0; VW = 0; VOL = 0; NINETIES = 0; TTNDS = 0;TTNDTENS = 0; D = 0; E = 0; FLEX = 0; PREM = 0; R = 0;  ZERO = 0; ONE = 0; TWO = 0; THREE = 0; FOUR = 0; FIVE = 0; SIX = 0; SEVEN = 0; EIGHT = 0; NINE = 0; TEN = 0; WD = 0; AWD = 0; FWD = 0; RWD = 0; AUTO = 0; MAN = 0;
+7                                                                       // ^ All variable declared. ^
+                    for(var i = 0; i < data.length; i++){
 8                       if(data[i].xx == 4){                            Step 3 changes lines 8 - 10
 9                           xx += 1;                                    depending on the boxes ticked
 10                      }                                               by end-user.
@@ -169,7 +170,7 @@ If x-axis is Country:
     console.log("United Kingdom = ", UK);
     console.log("United States = ", US);
 
-            data: [DE, FR, ITL, JPN, KR, NL, SE, UK, US],
+                data: [DE, FR, ITL, JPN, KR, NL, SE, UK, US],
 
 If x-axis is Make:
         if(data[i].Make == "ACU"){ACU += 1;}
