@@ -122,7 +122,6 @@ nav a:hover:after {
 
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-footer {}
 @media (min-width: 400px) {}
 @media (min-width: 550px) {}
 @media (min-width: 750px) {}
@@ -133,35 +132,67 @@ Landing page
 properties are for individual pages, prefix selectors with class attribute followed by page name
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .index {
-    background-image: url("../img/jonathan-gallegos-722421-unsplash.jpg"); /* The image used */
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../img/lorenzo-fulvi-1270108-unsplash.jpg"); /* The image used */
     background-color: #f5f6fa; /* Used if the image is unavailable */
-    height: 500px; /* You must set a specified height */
+    height: 800px; /* You must set a specified height */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
     overflow: hidden; /* Prevent scrolling */
-    margin: 0;} /* Prevent scrolling */
+    margin: 0; /* Prevent scrolling */}
+.index header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);}
+.index h1 {
+    text-align: center;
+    font-size: 5.0rem;
+    color: #F5F6FA;}
+.index h2 {
+    text-align: center;
+    font-size: 2.0rem;
+    color: #F5F6FA;}
 @media (min-width: 400px) {
     .index {
     height: 100vh;
-    width: 100vw;}
+    width: 100vw;
+    background-image: url("../img/lorenzo-fulvi-1270108-unsplash.jpg"); /* The image used */
+    background-color: #f5f6fa; /* Used if the image is unavailable */
+    height: 800px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    overflow: hidden; /* Prevent scrolling */
+    margin: 0; /* Prevent scrolling */}
 }
 @media (min-width: 550px) {
     .index {
-    height: 100vh;
-    width: 100vw;}
+        height: 100vh;
+        width: 100vw;
+        background-image: url("../img/lorenzo-fulvi-1270108-unsplash.jpg"); /* The image used */
+        background-color: #f5f6fa; /* Used if the image is unavailable */
+        height: 800px; /* You must set a specified height */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+        overflow: hidden; /* Prevent scrolling */
+        margin: 0; /* Prevent scrolling */}
 }
 @media (min-width: 750px) {
     .index {
         height: 100vh;
-        width: 100vw;}
-}
-@media (min-width: 1000px) {
-    .index {
-        height: 100vh;
         width: 100vw;
-        position: relative;
-        text-align: center;}
+        background-image: url("../img/jonathan-gallegos-722421-unsplash.jpg"); /* The image used */
+        background-color: #f5f6fa; /* Used if the image is unavailable */
+        height: 500px; /* You must set a specified height */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+        overflow: hidden; /* Prevent scrolling */
+        margin: 0; /* Prevent scrolling */}
     .index header {
         position: absolute;
         top: 50%;
@@ -175,8 +206,34 @@ properties are for individual pages, prefix selectors with class attribute follo
         text-align: center;
         font-size: 5.0rem;
         color: #F5F6FA;}
-    .index button {
-        }
+}
+@media (min-width: 1000px) {
+    .index {
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        text-align: center;
+        background-image: url("../img/jonathan-gallegos-722421-unsplash.jpg"); /* The image used */
+        background-color: #f5f6fa; /* Used if the image is unavailable */
+        height: 500px; /* You must set a specified height */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+        overflow: hidden; /* Prevent scrolling */
+        margin: 0; /* Prevent scrolling */}
+    .index header {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);}
+    .index h1 {
+        text-align: center;
+        font-size: 22.0rem;
+        color: #F5F6FA;}
+    .index h2 {
+        text-align: center;
+        font-size: 5.0rem;
+        color: #F5F6FA;}
 }
 
 /* Use.html
@@ -188,7 +245,11 @@ properties are for individual pages, prefix selectors with class attribute follo
 @media (min-width: 400px) {}
 @media (min-width: 550px) {}
 @media (min-width: 750px) {}
-@media (min-width: 1000px) {}
+@media (min-width: 1000px) {
+    .use {
+        overflow: hidden; /* Prevent scrolling */
+        margin: 0; /* Prevent scrolling */}
+}
 
 /* Examples.html
 Example charts
@@ -199,7 +260,11 @@ properties are for individual pages, prefix selectors with class attribute follo
 @media (min-width: 400px) {}
 @media (min-width: 550px) {}
 @media (min-width: 750px) {}
-@media (min-width: 1000px) {}
+@media (min-width: 1000px) {
+    .examples {
+        overflow: hidden; /* Prevent scrolling */
+        margin: 0; /* Prevent scrolling */}
+}
 
 /* Demo.html
 End-user manipulation
@@ -210,26 +275,32 @@ properties are for individual pages, prefix selectors with class attribute follo
 @media (min-width: 400px) {}
 @media (min-width: 550px) {}
 @media (min-width: 750px) {}
-@media (min-width: 1000px) {}
+@media (min-width: 1000px) {
+    .demo {
+        overflow: hidden; /* Prevent scrolling */
+        margin: 0; /* Prevent scrolling */
+    }
+}
 
 /* About.html
 properties are for individual pages, prefix selectors with class attribute followed by page name
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .about {
-    background-color: #f5f6fa;}
+    background-color: #f5f6fa;
+    overflow: hidden; /* Prevent scrolling */
+    margin: 0; /* Prevent scrolling */}
 @media (min-width: 400px) {}
 @media (min-width: 550px) {}
 @media (min-width: 750px) {
-    .index {
+    .about {
     height: 100vh;
     width: 100vw;}
 }
 @media (min-width: 1000px) {
-    .index {
+    .about {
     height: 100vh;
     width: 100vw;}
 }
-
 
 /* group 9
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
