@@ -11,7 +11,7 @@ Color palette:
 #ae213f Deep Carmine (highlights/accents)
 #6c6c6d Dim Gray (large text)
 #364156 Charcoal / dark blue (small text)
-#f5f6fa White Smoke (body background)
+#f9f9f9 off-white (body background)
 #040302 Rich Black / FOGRA39 (default text color)
 #dfe0e4 Platinum (other text)
 
@@ -134,7 +134,7 @@ properties are for individual pages, prefix selectors with class attribute follo
     height: 100vh;
     width: 100vw;
     background-image: url("../img/lorenzo-fulvi-1270108-unsplash.jpg"); /* The image used */
-    background-color: #f5f6fa; /* Used if the image is unavailable */
+    background-color: #f9f9f9; /* Used if the image is unavailable */
     height: 800px; /* You must set a specified height */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
@@ -149,17 +149,17 @@ properties are for individual pages, prefix selectors with class attribute follo
 .index h1 {
     text-align: center;
     font-size: 5.0rem;
-    color: #F5F6FA;}
+    color: #f9f9f9;}
 .index h2 {
     text-align: center;
     font-size: 2.0rem;
-    color: #F5F6FA;}
+    color: #f9f9f9;}
 @media (min-width: 400px) {
     .index {
     height: 100vh;
     width: 100vw;
     background-image: url("../img/lorenzo-fulvi-1270108-unsplash.jpg"); /* The image used */
-    background-color: #f5f6fa; /* Used if the image is unavailable */
+    background-color: #f9f9f9; /* Used if the image is unavailable */
     height: 800px; /* You must set a specified height */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
@@ -172,7 +172,7 @@ properties are for individual pages, prefix selectors with class attribute follo
         height: 100vh;
         width: 100vw;
         background-image: url("../img/lorenzo-fulvi-1270108-unsplash.jpg"); /* The image used */
-        background-color: #f5f6fa; /* Used if the image is unavailable */
+        background-color: #f9f9f9; /* Used if the image is unavailable */
         height: 800px; /* You must set a specified height */
         background-position: center; /* Center the image */
         background-repeat: no-repeat; /* Do not repeat the image */
@@ -186,7 +186,7 @@ properties are for individual pages, prefix selectors with class attribute follo
         width: 100vw;
         text-align: center; /* Keeps 'Learn more' button centered under <h2> */
         background-image: url("../img/jonathan-gallegos-722421-unsplash.jpg"); /* The image used */
-        background-color: #f5f6fa; /* Used if the image is unavailable */
+        background-color: #f9f9f9; /* Used if the image is unavailable */
         /* height: 500px; You must set a specified height / not used */
         background-position: center; /* Center the image */
         background-repeat: no-repeat; /* Do not repeat the image */
@@ -201,11 +201,11 @@ properties are for individual pages, prefix selectors with class attribute follo
     .index h1 {
         text-align: center;
         font-size: 22.0rem;
-        color: #F5F6FA;}
+        color: #f9f9f9;}
     .index h2 {
         text-align: center;
         font-size: 5.0rem;
-        color: #F5F6FA;}
+        color: #f9f9f9;}
 }
 @media (min-width: 1000px) {
     .index {
@@ -213,7 +213,7 @@ properties are for individual pages, prefix selectors with class attribute follo
         width: 100vw;
         text-align: center;  /* Keeps 'Learn more' button centered under <h2> */
         background-image: url("../img/jonathan-gallegos-722421-unsplash.jpg"); /* The image used */
-        background-color: #f5f6fa; /* Used if the image is unavailable */
+        background-color: #f9f9f9; /* Used if the image is unavailable */
         /* height: 500px; You must set a specified height / not used */
         background-position: center; /* Center the image */
         background-repeat: no-repeat; /* Do not repeat the image */
@@ -228,32 +228,73 @@ properties are for individual pages, prefix selectors with class attribute follo
     .index h1 {
         text-align: center;
         font-size: 22.0rem;
-        color: #F5F6FA;}
+        color: #f9f9f9;}
     .index h2 {
         text-align: center;
         font-size: 5.0rem;
-        color: #F5F6FA;}
+        color: #f9f9f9;}
 }
 
 
 /* About.html
 properties are for individual pages, prefix selectors with class attribute followed by page name
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-.about {
-    background-color: #f5f6fa;
-    overflow: hidden; /* Prevent scrolling */
-    margin: 0; /* Prevent scrolling */}
-@media (min-width: 400px) {}
-@media (min-width: 550px) {}
+@media (min-width: 400px) {
+    .about {
+        height: 300vh;
+        width: 100vw;
+        background-color: #f9f9f9;}
+}
+@media (min-width: 550px) {
+    .about {
+        height: 300vh;
+        width: 100vw;
+        background-color: #f9f9f9;}
+}
 @media (min-width: 750px) {
     .about {
-    height: 100vh;
-    width: 100vw;}
+        height: 300vh;
+        width: 100vw;
+        background-color: #f9f9f9;}
+    .about nav a.active:after {
+        width: 100%;}
+    .about header {
+        height: 100vh;
+        width: 100vw;
+        background-image: url("../img/claudio-hirschberger-1326178-unsplash.jpg"); /* The image used */
+        background-color: #f9f9f9; /* Used if the image is unavailable */
+        /* height: 500px; You must set a specified height / not used */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */}
+    .about div {
+    }
 }
 @media (min-width: 1000px) {
     .about {
-    height: 100vh;
-    width: 100vw;}
+        height: 290vh;
+        width: 100vw;
+        background-color: #f9f9f9;
+        background-image: url("../img/claudio-hirschberger-1326178-unsplash.jpg"); /* The image used */
+        background-color: #f9f9f9; /* Used if the image is unavailable */
+        height: 90vh; /* You must set a specified height */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */}
+    .about nav a.active:after { 
+        width: 100%;}
+    .about header {
+        height: 90vh;
+        width: 100vw;}
+    .about div.topContainer {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);}
+    .about div.bodyContainer {
+        height: 200vh;
+        width: 100vw;
+    }
 }
 
 /* Examples.html
@@ -261,14 +302,19 @@ Example charts
 properties are for individual pages, prefix selectors with class attribute followed by page name
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .examples {
-    background-color: #f5f6fa;}
+    background-color: #f9f9f9;}
 @media (min-width: 400px) {}
 @media (min-width: 550px) {}
-@media (min-width: 750px) {}
+@media (min-width: 750px) {
+    .examples nav a.active:after { 
+        width: 100%;}
+}
 @media (min-width: 1000px) {
     .examples {
         overflow: hidden; /* Prevent scrolling */
         margin: 0; /* Prevent scrolling */}
+    .examples nav a.active:after { 
+        width: 100%;}
 }
 
 /* Demo.html
@@ -276,15 +322,19 @@ End-user manipulation
 properties are for individual pages, prefix selectors with class attribute followed by page name
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .demo {
-    background-color: #f5f6fa;}
+    background-color: #f9f9f9;}
 @media (min-width: 400px) {}
 @media (min-width: 550px) {}
-@media (min-width: 750px) {}
+@media (min-width: 750px) {
+    .demo nav a.active:after { 
+        width: 100%;}
+}
 @media (min-width: 1000px) {
     .demo {
         overflow: hidden; /* Prevent scrolling */
-        margin: 0; /* Prevent scrolling */
-    }
+        margin: 0; /* Prevent scrolling */}
+    .demo nav a.active:after { 
+        width: 100%;}
 }
 
 /* group 9
