@@ -11,7 +11,7 @@ Color palette:
 #ae213f Deep Carmine (highlights/accents)
 #6c6c6d Dim Gray (large text)
 #364156 Charcoal / dark blue (small text)
-#f5f6fa White Smoke (body background)
+#f9f9f9 off-white (body background)
 #040302 Rich Black / FOGRA39 (default text color)
 #dfe0e4 Platinum (other text)
 
@@ -23,10 +23,9 @@ Color palette:
 - Nav bar
 - Footer
 - Index.html
-- Use.html
+- About.html
 - Examples.html
 - Demo.html
-- About.html
 - group 9
 */
 
@@ -122,7 +121,6 @@ nav a:hover:after {
 
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-footer {}
 @media (min-width: 400px) {}
 @media (min-width: 550px) {}
 @media (min-width: 750px) {}
@@ -133,35 +131,68 @@ Landing page
 properties are for individual pages, prefix selectors with class attribute followed by page name
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .index {
-    background-image: url("../img/jonathan-gallegos-722421-unsplash.jpg"); /* The image used */
-    background-color: #f5f6fa; /* Used if the image is unavailable */
-    height: 500px; /* You must set a specified height */
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../img/lorenzo-fulvi-1270108-unsplash.jpg"); /* The image used */
+    background-color: #f9f9f9; /* Used if the image is unavailable */
+    height: 800px; /* You must set a specified height */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
     overflow: hidden; /* Prevent scrolling */
-    margin: 0;} /* Prevent scrolling */
+    margin: 0; /* Prevent scrolling */}
+.index header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);}
+.index h1 {
+    text-align: center;
+    font-size: 5.0rem;
+    color: #f9f9f9;}
+.index h2 {
+    text-align: center;
+    font-size: 2.0rem;
+    color: #f9f9f9;}
 @media (min-width: 400px) {
     .index {
     height: 100vh;
-    width: 100vw;}
+    width: 100vw;
+    background-image: url("../img/lorenzo-fulvi-1270108-unsplash.jpg"); /* The image used */
+    background-color: #f9f9f9; /* Used if the image is unavailable */
+    height: 800px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    overflow: hidden; /* Prevent scrolling */
+    margin: 0; /* Prevent scrolling */}
 }
 @media (min-width: 550px) {
     .index {
-    height: 100vh;
-    width: 100vw;}
+        height: 100vh;
+        width: 100vw;
+        background-image: url("../img/lorenzo-fulvi-1270108-unsplash.jpg"); /* The image used */
+        background-color: #f9f9f9; /* Used if the image is unavailable */
+        height: 800px; /* You must set a specified height */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+        overflow: hidden; /* Prevent scrolling */
+        margin: 0; /* Prevent scrolling */}
 }
 @media (min-width: 750px) {
     .index {
         height: 100vh;
-        width: 100vw;}
-}
-@media (min-width: 1000px) {
-    .index {
-        height: 100vh;
         width: 100vw;
-        position: relative;
-        text-align: center;}
+        text-align: center; /* Keeps 'Learn more' button centered under <h2> */
+        background-image: url("../img/jonathan-gallegos-722421-unsplash.jpg"); /* The image used */
+        background-color: #f9f9f9; /* Used if the image is unavailable */
+        /* height: 500px; You must set a specified height / not used */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+        overflow: hidden; /* Prevent scrolling */
+        margin: 0; /* Prevent scrolling */}
     .index header {
         position: absolute;
         top: 50%;
@@ -170,66 +201,206 @@ properties are for individual pages, prefix selectors with class attribute follo
     .index h1 {
         text-align: center;
         font-size: 22.0rem;
-        color: #F5F6FA;}
+        color: #f9f9f9;}
     .index h2 {
         text-align: center;
         font-size: 5.0rem;
-        color: #F5F6FA;}
-    .index button {
-        }
+        color: #f9f9f9;}
+}
+@media (min-width: 1000px) {
+    .index {
+        height: 100vh;
+        width: 100vw;
+        text-align: center;  /* Keeps 'Learn more' button centered under <h2> */
+        background-image: url("../img/jonathan-gallegos-722421-unsplash.jpg"); /* The image used */
+        background-color: #f9f9f9; /* Used if the image is unavailable */
+        /* height: 500px; You must set a specified height / not used */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+        overflow: hidden; /* Prevent scrolling */
+        margin: 0; /* Prevent scrolling */}
+    .index header {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);}
+    .index h1 {
+        text-align: center;
+        font-size: 22.0rem;
+        color: #f9f9f9;
+        text-shadow: 3px 3px 5px rgba(108,108,109,0.67);}
+    .index h2 {
+        text-align: center;
+        font-size: 5.0rem;
+        color: #f9f9f9;
+        text-shadow: 3px 3px 5px rgba(108,108,109,0.67);}
 }
 
-/* Use.html
-Explanation
+
+/* About.html
 properties are for individual pages, prefix selectors with class attribute followed by page name
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-.use {
-    background-color: #f5f6fa;}
-@media (min-width: 400px) {}
-@media (min-width: 550px) {}
-@media (min-width: 750px) {}
-@media (min-width: 1000px) {}
+@media (min-width: 400px) {
+    .about {
+        height: 300vh;
+        width: 100vw;
+        background-color: #f9f9f9;}
+}
+@media (min-width: 550px) {
+    .about {
+        height: 300vh;
+        width: 100vw;
+        background-color: #f9f9f9;}
+}
+@media (min-width: 750px) {
+    .about {
+        height: 300vh;
+        width: 100vw;
+        background-color: #f9f9f9;
+        background-image: url("../img/clay-banks-1277418-unsplash.jpg"); /* The image used */
+        background-color: #f9f9f9; /* Used if the image is unavailable */
+        height: 100vh; /* You must set a specified height */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover /* Resize the background image to cover the entire container */}
+    .about nav a,
+    .about nav a:link,
+    .about nav a:visited,
+    .about nav a:hover {
+        color: #364156;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        font-size: 2.0rem;
+        text-transform: uppercase;}
+    .about nav a:after {    
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        background: #364156;
+        width: 0;}
+    .about nav a.active:after { 
+        width: 100%;}
+    .about div.topContainer {
+        height: 95vh;
+        max-width: 80vw;}
+    .about header {
+        width: 100vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -30%);}
+    .about h1 {
+        text-align: center;
+        font-size: 5.0rem;
+        color: #f9f9f9;
+        text-shadow: 1px 1px 5px rgba(54,65,86,0.5);}
+    .about div.bodyContainer {
+        height: 200vh;
+        width: 100vw;
+        background-color: #f9f9f9;}
+}
+@media (min-width: 1000px) {
+    .about {
+        height: 300vh;
+        width: 100vw;
+        background-color: #f9f9f9;
+        background-image: url("../img/automobile-classic-combi-1616262.jpg"); /* The image used */
+        background-color: #f9f9f9; /* Used if the image is unavailable */
+        height: 100vh; /* You must set a specified height */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: auto; /* Resize the background image to cover the entire container */}
+    .about nav a,
+    .about nav a:link,
+    .about nav a:visited,
+    .about nav a:hover {
+        color: #dfe0e4;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        font-size: 2.0rem;
+        text-transform: uppercase;}
+    .about nav a:after {    
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        background: #dfe0e4;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;}
+    .about nav .demoLink:after {
+        background: #ae213f;}
+    .about nav a:hover:after { 
+    width: 100%;}
+    .about nav a.active:after { 
+        width: 100%;}
+    .about div.topContainer {
+        height: 90vh;
+        max-width: 80vw;;}
+    .about header {
+        width: 100vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 12.5%);}
+    .about h1 {
+        text-align: center;
+        font-size:11.0rem;
+        color: #f9f9f9;
+        text-shadow: 1px 1px 5px rgba(249,249,249,0.25);}
+    .about div.bodyContainer {
+        height: 200vh;
+        width: 100vw;
+        background-color: #f9f9f9;}
+    .about img:nth-of-type(1) {
+        height: 60vh;
+        width: auto;}
+}
 
 /* Examples.html
 Example charts
 properties are for individual pages, prefix selectors with class attribute followed by page name
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .examples {
-    background-color: #f5f6fa;}
+    background-color: #f9f9f9;}
 @media (min-width: 400px) {}
 @media (min-width: 550px) {}
-@media (min-width: 750px) {}
-@media (min-width: 1000px) {}
+@media (min-width: 750px) {
+    .examples nav a.active:after { 
+        width: 100%;}
+}
+@media (min-width: 1000px) {
+    .examples {
+        overflow: hidden; /* Prevent scrolling */
+        margin: 0; /* Prevent scrolling */}
+    .examples nav a.active:after { 
+        width: 100%;}
+}
 
 /* Demo.html
 End-user manipulation
 properties are for individual pages, prefix selectors with class attribute followed by page name
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .demo {
-    background-color: #f5f6fa;}
-@media (min-width: 400px) {}
-@media (min-width: 550px) {}
-@media (min-width: 750px) {}
-@media (min-width: 1000px) {}
-
-/* About.html
-properties are for individual pages, prefix selectors with class attribute followed by page name
-–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-.about {
-    background-color: #f5f6fa;}
+    background-color: #f9f9f9;}
 @media (min-width: 400px) {}
 @media (min-width: 550px) {}
 @media (min-width: 750px) {
-    .index {
-    height: 100vh;
-    width: 100vw;}
+    .demo nav a.active:after { 
+        width: 100%;}
 }
 @media (min-width: 1000px) {
-    .index {
-    height: 100vh;
-    width: 100vw;}
+    .demo {
+        overflow: hidden; /* Prevent scrolling */
+        margin: 0; /* Prevent scrolling */}
+    .demo nav a.active:after { 
+        width: 100%;}
 }
-
 
 /* group 9
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */

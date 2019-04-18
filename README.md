@@ -25,8 +25,8 @@ Dunwoody CWEB1111.01 Spring 2019 | Team Project Phase 1
 - [ ] Welcome end-user (who the data is for/when the data was extracted/where data came from/why data is important)
 - [ ] End-user manipulate one chart
 - [x] Select font
-- [ ] Select color
-- [ ] Select graphics
+- [x] Select color
+- [x] Select graphics
 
 ## Data/programming logic
 - [x] Determine topic
