@@ -2,8 +2,6 @@
 Notes
 ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 Suggested media queries (taken from skeleton.css):
-    @media (min-width: 400px) {}
-    @media (min-width: 550px) {}
     @media (min-width: 750px) {}
     @media (min-width: 1000px) {}
 ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -21,7 +19,6 @@ Color palette:
 - Universal
 - Typography
 - Nav bar
-- Footer
 - Index.html
 - About.html
 - Examples.html
@@ -77,6 +74,7 @@ html {
 
 /* Nav bar
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Base nav CSS recipe */
 nav a,
 nav a:link,
 nav a:visited,
@@ -87,22 +85,16 @@ nav a:hover {
     text-align: center;
     font-size: 2.0rem;
     text-transform: uppercase;}
-nav a:after {    
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  background: #dfe0e4;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;}
-nav .demoLink:after {
-    background: #ae213f;}
-nav a:hover:after { 
-  width: 100%;}
-@media (min-width: 400px) {}
-@media (min-width: 550px) {}
-@media (min-width: 750px) {}
+nav .override {
+    max-width: 450px;}
+@media (max-width: 749px) { /* Hide the nav bar on phones */
+    nav {
+    visibility: hidden;}
+}
+@media (min-width: 750px) {
+    nav > div {
+        margin-top: 2vh;}
+}
 @media (min-width: 1000px) {
     nav {
         height: 10vh;}
@@ -113,29 +105,20 @@ nav a:hover:after {
     nav a:link,
     nav a:visited,
     nav a:hover {
-        font-size: 2.0rem;}
-    nav .demoLink:hover {
-        color: #ae213f;
-        transition: 0.25s;}
+        font-size: 3.0rem;}
 }
-
-/* Footer
-–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media (min-width: 400px) {}
-@media (min-width: 550px) {}
-@media (min-width: 750px) {}
-@media (min-width: 1000px) {}
 
 /* Index.html
 Landing page
 properties are for individual pages, prefix selectors with class attribute followed by page name
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-.index {
+/* Base index CSS recipe */
+.index { /* Index background */
     height: 100vh;
     width: 100vw;
-    background-image: url("../img/lorenzo-fulvi-1270108-unsplash.jpg"); /* The image used */
+    background-image: url("../img/aaron-burden-554339-unsplash.jpg"); /* The image used */
     background-color: #f9f9f9; /* Used if the image is unavailable */
-    height: 800px; /* You must set a specified height */
+    height: 100vh; /* You must set a specified height */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
@@ -154,32 +137,12 @@ properties are for individual pages, prefix selectors with class attribute follo
     text-align: center;
     font-size: 2.0rem;
     color: #f9f9f9;}
-@media (min-width: 400px) {
-    .index {
-    height: 100vh;
-    width: 100vw;
-    background-image: url("../img/lorenzo-fulvi-1270108-unsplash.jpg"); /* The image used */
-    background-color: #f9f9f9; /* Used if the image is unavailable */
-    height: 800px; /* You must set a specified height */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-    overflow: hidden; /* Prevent scrolling */
-    margin: 0; /* Prevent scrolling */}
-}
-@media (min-width: 550px) {
-    .index {
-        height: 100vh;
-        width: 100vw;
-        background-image: url("../img/lorenzo-fulvi-1270108-unsplash.jpg"); /* The image used */
-        background-color: #f9f9f9; /* Used if the image is unavailable */
-        height: 800px; /* You must set a specified height */
-        background-position: center; /* Center the image */
-        background-repeat: no-repeat; /* Do not repeat the image */
-        background-size: cover; /* Resize the background image to cover the entire container */
-        overflow: hidden; /* Prevent scrolling */
-        margin: 0; /* Prevent scrolling */}
-}
+.index button {
+    color: #f9f9f9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 180%);}
 @media (min-width: 750px) {
     .index {
         height: 100vh;
@@ -200,12 +163,17 @@ properties are for individual pages, prefix selectors with class attribute follo
         transform: translate(-50%, -50%);}
     .index h1 {
         text-align: center;
-        font-size: 22.0rem;
-        color: #f9f9f9;}
+        font-size: 16.0rem;
+        color: #f9f9f9;
+        text-shadow: 3px 3px 5px rgba(108,108,109,0.67);}
     .index h2 {
         text-align: center;
-        font-size: 5.0rem;
-        color: #f9f9f9;}
+        font-size: 4.0rem;
+        color: #f9f9f9;
+        text-shadow: 3px 3px 5px rgba(108,108,109,0.67);}
+    .index button {
+        transform: translate(-50%, 380%);
+        font-size: 16px;}
 }
 @media (min-width: 1000px) {
     .index {
@@ -235,131 +203,261 @@ properties are for individual pages, prefix selectors with class attribute follo
         font-size: 5.0rem;
         color: #f9f9f9;
         text-shadow: 3px 3px 5px rgba(108,108,109,0.67);}
+    .index button {
+    transform: translate(-50%, 500%);
+    font-size: 25px;}
 }
 
 
 /* About.html
 properties are for individual pages, prefix selectors with class attribute followed by page name
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media (min-width: 400px) {
-    .about {
-        height: 300vh;
-        width: 100vw;
-        background-color: #f9f9f9;}
-}
-@media (min-width: 550px) {
-    .about {
-        height: 300vh;
-        width: 100vw;
-        background-color: #f9f9f9;}
-}
+/* Base about CSS recipe */
+.about {
+    width: 100vw;}
+.about nav {
+    height: 0px;}
+.about .topContainer {
+    background-image: url("../img/beach-bird-s-eye-view-car-1393996.jpg");
+    background-color: #f9f9f9; /* Used if the image is unavailable */
+    height: 100vh; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */}
+.about header {
+    width: 100vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 83%);}
+.about h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #f9f9f9;
+    text-shadow: 1px 1px 5px rgba(54,65,86,0.5);}
+.about .bodyContainer {
+    height: auto;
+    width: 100vw;}
+.about .whatPic, .whatWhereWhenText, .whereWhenPic, .whoPic, .whoText {
+    max-height: 150vh;}
+.about .whatPic {
+    background-image: url("../img/auto-automobile-automotive-1140991.jpg");
+    background-color: #f9f9f9; /* Used if the image is unavailable */
+    height: 32.5vh; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    margin-top: 25vh;}
+.about .bodyContainer h1 {
+    text-align: left;
+    padding-left: 5.125vw;
+    color: #364156;
+    text-shadow: none;}
+.about .override1 {
+    margin-top: 2rem;}
+.about .whatWhereWhenText .override2 {
+    margin-top: 6.125vh;}
+.about .bodyContainer p {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    text-align: justify;
+    font-size: 1.825rem;
+    color: #6c6c6d;}
+.about .whereWhenPic {
+    background-image: url("../img/tanner-boriack-538057-unsplash.jpg");
+    background-color: #f9f9f9; /* Used if the image is unavailable */
+    height: 45vh; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */}
+.about .whoPic {
+    background-image: url("../img/simon-migaj-547079-unsplash.jpg");
+    background-color: #f9f9f9; /* Used if the image is unavailable */
+    height: 45vh; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    margin-top: 12.5vh;}
+.about .whyText, .about .whyPic {
+    max-height: 100vh;}
+.about .whyText {
+    padding-top: 12.5vh;}
+.about .whyPic {
+    background-image: url("../img/artistic-asphalt-automobiles-799443.jpg");
+    background-color: #f9f9f9; /* Used if the image is unavailable */
+    height: 66vh; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */}
+.about .mobileExtra {
+    margin: 7.5vh 2.5vw;
+    text-align: center;}
+.about .mobileExtra > .one {
+    text-align: inline-block;}
+.about .mobileExtra button {
+    color: #364156;
+    font-size: 2.5rem;}
 @media (min-width: 750px) {
-    .about {
-        height: 300vh;
-        width: 100vw;
-        background-color: #f9f9f9;
-        background-image: url("../img/clay-banks-1277418-unsplash.jpg"); /* The image used */
-        background-color: #f9f9f9; /* Used if the image is unavailable */
-        height: 100vh; /* You must set a specified height */
-        background-position: center; /* Center the image */
-        background-repeat: no-repeat; /* Do not repeat the image */
-        background-size: cover /* Resize the background image to cover the entire container */}
-    .about nav a,
-    .about nav a:link,
-    .about nav a:visited,
-    .about nav a:hover {
-        color: #364156;
-        text-decoration: none;
-        display: block;
-        text-align: center;
-        font-size: 2.0rem;
-        text-transform: uppercase;}
-    .about nav a:after {    
-        background: none repeat scroll 0 0 transparent;
-        bottom: 0;
-        content: "";
-        display: block;
-        height: 2px;
-        background: #364156;
-        width: 0;}
-    .about nav a.active:after { 
-        width: 100%;}
-    .about div.topContainer {
-        height: 95vh;
-        max-width: 80vw;}
     .about header {
         width: 100vw;
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -30%);}
+        transform: translate(-50%, 41%);}
     .about h1 {
         text-align: center;
         font-size: 5.0rem;
         color: #f9f9f9;
         text-shadow: 1px 1px 5px rgba(54,65,86,0.5);}
-    .about div.bodyContainer {
-        height: 200vh;
-        width: 100vw;
-        background-color: #f9f9f9;}
-}
-@media (min-width: 1000px) {
-    .about {
-        height: 300vh;
-        width: 100vw;
-        background-color: #f9f9f9;
-        background-image: url("../img/automobile-classic-combi-1616262.jpg"); /* The image used */
+    .about .whatPic, .whatWhereWhenText, .whereWhenPic, .whoPic, .whoText {
+        max-height: 85vh;}
+    .about .whatPic {
+        background-image: url("../img/auto-automobile-automotive-1140991.jpg");
         background-color: #f9f9f9; /* Used if the image is unavailable */
-        height: 100vh; /* You must set a specified height */
+        height: 32.5vh; /* You must set a specified height */
         background-position: center; /* Center the image */
         background-repeat: no-repeat; /* Do not repeat the image */
-        background-size: auto; /* Resize the background image to cover the entire container */}
-    .about nav a,
-    .about nav a:link,
-    .about nav a:visited,
-    .about nav a:hover {
-        color: #dfe0e4;
-        text-decoration: none;
-        display: block;
-        text-align: center;
-        font-size: 2.0rem;
-        text-transform: uppercase;}
-    .about nav a:after {    
-        background: none repeat scroll 0 0 transparent;
-        bottom: 0;
-        content: "";
-        display: block;
-        height: 2px;
-        background: #dfe0e4;
-        transition: width 0.3s ease 0s, left 0.3s ease 0s;
-        width: 0;}
-    .about nav .demoLink:after {
-        background: #ae213f;}
-    .about nav a:hover:after { 
-    width: 100%;}
-    .about nav a.active:after { 
-        width: 100%;}
-    .about div.topContainer {
-        height: 90vh;
-        max-width: 80vw;;}
+        background-size: cover; /* Resize the background image to cover the entire container */
+        margin-top: 25vh;}
+    .about .bodyContainer h1 {
+        text-align: left;
+        padding-left: 1.0125vw;
+        color: #364156;
+        text-shadow: none;
+        font-size: 2.75rem;}
+    .about .override1 {
+        padding-top: 5vh;}
+    .about .whatWhereWhenText {
+        margin-top: 25vh;}
+    .about .bodyContainer p {
+        padding-left: 5vw;;
+        padding-right: none;
+        text-align: left;
+        font-size: 1.525rem;
+        color: #6c6c6d;}
+    .about .whereWhenPic {
+        background-image: url("../img/tanner-boriack-538057-unsplash.jpg");
+        background-color: #f9f9f9; /* Used if the image is unavailable */
+        height: 45vh; /* You must set a specified height */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+        margin-top: 50vh;}
+    .about .whoText {
+        margin-top: 12.5vh;}
+    .about .whoPic {
+        background-image: url("../img/simon-migaj-547079-unsplash.jpg");
+        background-color: #f9f9f9; /* Used if the image is unavailable */
+        height: 45vh; /* You must set a specified height */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+        margin-top: 12.5vh;}
+    .about .whyText, .about .whyPic {
+        max-height: 70vh;
+        margin-top: 12.25vh;}
+    .about .whyText {
+        padding-top: 12.5vh;
+        padding-left: 6.125vw;
+        padding-right: 2vw;}
+    .about .whyText p {
+        padding-right: 0;}
+    .about .whyPic {
+        background-image: url("../img/artistic-asphalt-automobiles-799443.jpg");
+        background-color: #f9f9f9; /* Used if the image is unavailable */
+        height: 66vh; /* You must set a specified height */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */}
+    .about .mobileExtra {
+        margin: 17.25vh 2.5vw;
+        text-align: center;}
+    .about .mobileExtra > .one {
+        text-align: inline-block;}
+    .about .mobileExtra button {
+        color: #364156;
+        font-size: 2.5rem;}
+}
+@media (min-width: 1000px) {
     .about header {
         width: 100vw;
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, 12.5%);}
+        transform: translate(-50%, 60%);}
     .about h1 {
         text-align: center;
-        font-size:11.0rem;
+        font-size: 7.0rem;
         color: #f9f9f9;
-        text-shadow: 1px 1px 5px rgba(249,249,249,0.25);}
-    .about div.bodyContainer {
-        height: 200vh;
-        width: 100vw;
-        background-color: #f9f9f9;}
-    .about img:nth-of-type(1) {
-        height: 60vh;
-        width: auto;}
+        text-shadow: 1px 1px 5px rgba(54,65,86,0.5);}
+    .about .whatPic, .whatWhereWhenText, .whereWhenPic, .whoPic, .whoText {
+        max-height: 90vh;}
+    .about .whatPic {
+        background-image: url("../img/auto-automobile-automotive-1140991.jpg");
+        background-color: #f9f9f9; /* Used if the image is unavailable */
+        height: 40VH; /* You must set a specified height */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+        margin-top: 25vh;}
+    .about .bodyContainer h1 {
+        text-align: left;
+        padding-left: 1.0125vw;
+        color: #364156;
+        text-shadow: none;
+        font-size: 3.5rem;}
+    .about .override1 {
+        padding-top: 5vh;}
+    .about .whatWhereWhenText {
+        margin-top: 25vh;}
+    .about .bodyContainer p {
+        padding-left: 5vw;;
+        padding-right: none;
+        text-align: left;
+        font-size: 2.25rem;
+        color: #6c6c6d;}
+    .about .whereWhenPic {
+        background-image: url("../img/tanner-boriack-538057-unsplash.jpg");
+        background-color: #f9f9f9; /* Used if the image is unavailable */
+        height: 55vh; /* You must set a specified height */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+        margin-top: 50vh;}
+    .about .whoText {
+        margin-top: 12.5vh;}
+    .about .whoPic {
+        background-image: url("../img/simon-migaj-547079-unsplash.jpg");
+        background-color: #f9f9f9; /* Used if the image is unavailable */
+        height: 60vh; /* You must set a specified height */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+        margin-top: 12.5vh;}
+    .about .whyText, .about .whyPic {
+        max-height: 70vh;
+        margin-top: 12.25vh;}
+    .about .whyText {
+        padding-top: 12.5vh;
+        padding-left: 6.125vw;
+        padding-right: 2vw;}
+    .about .whyText p {
+        padding-right: 0;}
+    .about .whyPic {
+        background-image: url("../img/artistic-asphalt-automobiles-799443.jpg");
+        background-color: #f9f9f9; /* Used if the image is unavailable */
+        height: 66vh; /* You must set a specified height */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */}
+    .about .mobileExtra {
+        margin: 22.125vh 2.5vw;
+        text-align: center;}
+    .about .mobileExtra > .one {
+        text-align: inline-block;}
+    .about .mobileExtra button {
+        color: #364156;
+        font-size: 2.5rem;}
 }
 
 /* Examples.html
@@ -368,18 +466,12 @@ properties are for individual pages, prefix selectors with class attribute follo
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .examples {
     background-color: #f9f9f9;}
-@media (min-width: 400px) {}
-@media (min-width: 550px) {}
 @media (min-width: 750px) {
-    .examples nav a.active:after { 
-        width: 100%;}
 }
 @media (min-width: 1000px) {
     .examples {
         overflow: hidden; /* Prevent scrolling */
         margin: 0; /* Prevent scrolling */}
-    .examples nav a.active:after { 
-        width: 100%;}
 }
 
 /* Demo.html
@@ -388,8 +480,6 @@ properties are for individual pages, prefix selectors with class attribute follo
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .demo {
     background-color: #f9f9f9;}
-@media (min-width: 400px) {}
-@media (min-width: 550px) {}
 @media (min-width: 750px) {
     .demo nav a.active:after { 
         width: 100%;}
@@ -401,10 +491,3 @@ properties are for individual pages, prefix selectors with class attribute follo
     .demo nav a.active:after { 
         width: 100%;}
 }
-
-/* group 9
-–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media (min-width: 400px) {}
-@media (min-width: 550px) {}
-@media (min-width: 750px) {}
-@media (min-width: 1000px) {}

@@ -42,25 +42,22 @@
     <!--
         Nav bar
     –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <nav class="row temporary7">
-        <!--
-            Logo container
-        –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <div class="four columns temporary6">
-            <!--<p class="logo logo-superscript"><a href="index.html">AutoStat</a>beta</p>-->
-        </div>
+    <nav class="row">
         <!--
             Nav bar links
         –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <div class="four columns u-pull-right temporary1">
+        <div class="eight columns u-pull-left">
             
-            <p class="three columns temporary3"><a href="examples.html">Examples</a></p>
-            <p class="three columns temporary4"><a href="about.html" class="active">About</a></p>
-            <p class="three columns temporary5"><a href="demo.html" class="demoLink">Demo</a></p>
+            <p class="four columns override"><a href="examples.html">Examples</a></p>
+            <p class="four columns override"><a href="about.html">About</a></p>
+            <p class="four columns override"><a href="demo.html" class="demoLink">Demo</a></p>
             
         </div>
     </nav>
 
+    <!--
+        <div> containing image and page heading
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="topContainer">
         <header>
             <h1>Data is only as important <br> as the meaning we give to it.</h1>
@@ -70,30 +67,40 @@
     <!--
         explanation of data to end user
     –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="bodyContainer temporary1">
-        <div class="row temporary2">
-            <div class="offset-by-one column ten columns temporary3">
-                <div class="six columns temporary4">
-                    <img src="img/black-and-white-car-classic-474.jpg" href="Black and white classic car">
-                </div>
-                <div class="six columns temporary5">
-                    <h2></h2>
-                    <h3></h3>
-                </div>
+    <div class="bodyContainer">
+        <div class="row">
+            <div class="three columns u-full-width whatPic"></div>
+            <div class="four columns whatWhereWhenText">
+                <h1 class="override1">What the data is</h1>
+                <br>
+                <p>This is what the data is. This is just some placeholder text.</p>
+                <br>
+                <h1 class="override2">Where the data came from and when it was created</h1>
+                <br>
+                <p>This is where the data came from and when it was created. This is just some placeholder text.</p>
+            </div>
+            <div class="five columns u-full-width whereWhenPic"></div>
+        </div>
+        <div class="row">
+            <div class="seven columns u-full-width whoPic"></div>
+            <div class="five columns whoText">
+                <h1 class="override1">Who the data is for</h1>
+                <p>This is who the data is for. This is just some placeholder text.</p>
             </div>
         </div>
-        <div class="row temporary6">
-            <div class="offset-by-one column ten columns temporary7">
-                <div class="six columns temporary1">
-                    <h2></h2>
-                    <h3></h3>
-                </div>
-                <div class="six columns temporary2">
-                    <img src="" href="">
-                </div>
+        <div class="row">
+            <div class="six columns whyText">
+                <h1 class="override1">Importance</h1>
+                <p>This is why the data is important. This is just some placeholder text.</p>
             </div>
+            <div class="six columns whyPic"></div>
         </div>
 
+        <div class="row mobileExtra">
+            <div class="twelve columns">
+                <button onclick="window.location.href='examples.html'">View examples</button>
+            </div>
+        </div>
     </div>
 
 </body>
